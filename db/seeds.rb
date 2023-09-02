@@ -9,3 +9,6 @@
 u1 = User.create!(name: "Michaela Brown", title: "Founder", email: "michaela.brown375@gmail.com", admin: true, password: "owner")
 
 c1 = Category.create!(name: "Essentials", description: "Pieces needed to make jewelry.")
+c2 = Category.create!(name: "Care Items", description: "Items to keep your jewelry clean and safe.")
+
+p1 = Product.create!(name: "Engrave Plate", category_id: c1.id, quantity: 50, status: "Full", price: 0.10)
