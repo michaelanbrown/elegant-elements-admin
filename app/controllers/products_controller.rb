@@ -14,6 +14,11 @@ class ProductsController < ApplicationController
         render json: product, status: :created
     end
 
+    def update
+        @product.update!(update_product_params)
+        render json: @product, status: :accepted
+    end
+
     def destroy
         @product.destroy
         head :no_content 
@@ -23,5 +28,9 @@ class ProductsController < ApplicationController
 
     def product_params
         params.permit(:category_id, :name, :status, :quantity, :price)
+    end
+
+    def update_product_params
+        params.permit(:status, :quantity, :price)
     end
 end
