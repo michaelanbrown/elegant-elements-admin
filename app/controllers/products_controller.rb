@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    before_action :find_product, only: [:show]
+    before_action :find_product, only: [:show, :destroy]
 
     def index 
         render json: Product.all, status: :ok
@@ -12,6 +12,11 @@ class ProductsController < ApplicationController
     def create
         product = Product.create!(product_params)
         render json: product, status: :created
+    end
+
+    def destroy
+        @product.destroy
+        head :no_content 
     end
 
     private
