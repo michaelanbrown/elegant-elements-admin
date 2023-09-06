@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    before_action :authenticate_user
+    # before_action :authenticate_user
 
     include ActionController::Cookies
 
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
     private
 
     def find_product
-        @order = Product.find(params[:id])
+        @product = Product.find(params[:id])
       end
 
     def authenticate_user
