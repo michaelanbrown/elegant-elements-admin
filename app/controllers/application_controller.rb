@@ -13,6 +13,10 @@ class ApplicationController < ActionController::API
 
     private
 
+    def find_product
+        @order = Product.find(params[:id])
+      end
+
     def authenticate_user
         render json: { errors: "Not authorized" }, status: :unauthorized unless current_user
     end
