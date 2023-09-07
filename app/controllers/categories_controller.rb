@@ -14,6 +14,11 @@ class CategoriesController < ApplicationController
         render json: category, status: :created
     end
 
+    def update
+        @category.update!(update_category_params)
+        render json: @category, status: :accepted
+    end
+
     private
 
     def category_params
