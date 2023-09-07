@@ -14,4 +14,10 @@ class CategoriesController < ApplicationController
         render json: category, status: :created
     end
 
+    private
+
+    def category_params
+        params.permit(:name, :description)
+    end
+
 end
