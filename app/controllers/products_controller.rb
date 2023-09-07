@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    before_action :find_product, only: [:show, :destroy]
+    before_action :find_product, only: [:show, :update, :destroy]
     before_action :authorize_user_is_admin, only: [:destroy]
 
     def index 
