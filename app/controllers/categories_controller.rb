@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-    before_action :find_category
+    before_action :find_category, only: [:show]
 
     def index 
         render json: Category.all, status: :ok
