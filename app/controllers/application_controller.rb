@@ -14,7 +14,11 @@ class ApplicationController < ActionController::API
 
     def find_product
         @product = Product.find(params[:id])
-      end
+    end
+
+    def find_category
+        @category = Category.find(params[:id])
+    end
 
     def authenticate_user
         render json: { errors: "Not authorized" }, status: :unauthorized unless current_user
