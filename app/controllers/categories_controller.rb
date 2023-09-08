@@ -19,6 +19,11 @@ class CategoriesController < ApplicationController
         render json: @category, status: :accepted
     end
 
+    def destroy
+        @category.destroy
+        head :no_content 
+    end
+
     private
 
     def category_params
