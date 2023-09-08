@@ -30,4 +30,8 @@ class CategoriesController < ApplicationController
         params.permit(:name, :description)
     end
 
+    def update_category_params
+        params.permit(:description)
+    end
+
 end
