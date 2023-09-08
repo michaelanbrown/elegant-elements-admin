@@ -8,9 +8,6 @@ function Welcome() {
         <div>
             <br />
             <div>
-                <h1>Elegant Elements</h1>
-                <h2>Admin</h2>
-                <img src={"https://cdn.shopify.com/s/files/1/0008/8932/3571/products/DSC_0019_800x800_1200x1200.jpg?v=1541563917"} alt="Handstamped Necklace Photo" width="30%" height="30%"/>
                 <br/>
                 <p className='welcome'>Here at Elegant Elements we are blessed to be able to provide our customers with the ability to be part of the creation of their own piece.</p>
                 <p className='welcome'>Our inspiration comes from promoting good mental health.
