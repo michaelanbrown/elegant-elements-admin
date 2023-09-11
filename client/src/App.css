@@ -51,3 +51,12 @@ body {
 .elegant-header{
   font-size: 250%;
 }
+
+.loginSignUp{
+  padding: 0;
+  border: 10;
+  background: black;
+  cursor: pointer;
+  font-size: 120%;
+  color: white
+}
