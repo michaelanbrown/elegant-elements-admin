@@ -17,7 +17,7 @@ function Welcome() {
             </div>
             <br/>
             <br/>
-            <p><button className='loginSignUp'>Login</button>{" "}<button className='loginSignUp'>Sign Up</button></p>
+            <p><button className='loginSignUp'>Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
         </div>
     )
 }
