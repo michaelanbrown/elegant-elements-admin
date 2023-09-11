@@ -15,9 +15,9 @@ function Welcome() {
                 As time went on, we decided to expand to any personalized message that a customer desires.
                 We will continue to promote good health and well being to all!</p>
             </div>
-            {/* <br/>
             <br/>
-            <p>Login</p> */}
+            <br/>
+            <p><button>Login</button>{" "}<button>Sign Up</button></p>
         </div>
     )
 }
