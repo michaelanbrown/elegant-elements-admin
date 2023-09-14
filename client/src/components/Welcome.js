@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Redirect} from "react-router-dom"
 import '../App.css'
 import { UserContext } from './context/User';
 
 function Welcome() {
-    const navigate = useNavigate();
 
     function onLoginButton() {
-
+        Redirect(`/login`)
     }
 
     return (
@@ -23,7 +22,7 @@ function Welcome() {
             </div>
             <br/>
             <br/>
-            <p><button className='loginSignUp'>Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
+            <p><button onClick={onLoginButton} className='loginSignUp'>Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
         </div>
     )
 }
