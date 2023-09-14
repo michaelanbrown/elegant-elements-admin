@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import './App.css';
 import { UserContext } from "./components/context/User";
 import { useContext } from 'react';
+import Login from "./components/Login";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/"><Welcome/></Route>
+          <Route path="/login"><Login/></Route>
         </Switch>
       </BrowserRouter>
     </div>
