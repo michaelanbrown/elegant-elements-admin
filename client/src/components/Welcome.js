@@ -1,12 +1,7 @@
-import React, { useContext } from 'react';
-import {Redirect} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import '../App.css'
 
 function Welcome() {
-
-    function onLoginButton() {
-        Redirect(`/login`)
-    }
 
     return (
         <div>
@@ -21,7 +16,7 @@ function Welcome() {
             </div>
             <br/>
             <br/>
-            <p><button onClick={onLoginButton} className='loginSignUp'>Login</button>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
+            <p><NavLink className='loginSignUp' to="/login">Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
         </div>
     )
 }
