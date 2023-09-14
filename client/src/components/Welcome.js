@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import {Redirect} from "react-router-dom"
 import '../App.css'
-import { UserContext } from './context/User';
 
 function Welcome() {
 
