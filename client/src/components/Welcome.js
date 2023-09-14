@@ -4,7 +4,6 @@ import '../App.css'
 import { UserContext } from './context/User';
 
 function Welcome() {
-    const { currentUser, setCurrentUser } = useContext(UserContext);
     const navigate = useNavigate();
 
     function onLoginButton() {
