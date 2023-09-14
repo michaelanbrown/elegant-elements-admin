@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../App.css'
+import { UserContext } from './context/User';
 
 function Welcome() {
-    
+    const { currentCustomer, setCurrentCustomer } = useContext(UserContext);
 
     return (
         <div>
