@@ -14,7 +14,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Switch>
-          <Route path="/"><Welcome/></Route>
+          <Route exact path="/"><Welcome/></Route>
           <Route path="/login"><Login/></Route>
         </Switch>
       </BrowserRouter>
