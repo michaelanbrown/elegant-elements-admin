@@ -4,6 +4,11 @@ import { UserContext } from './context/User';
 
 function Welcome() {
     const { currentUser, setCurrentUser } = useContext(UserContext);
+    const [errors, setErrors] = useState([])
+    const [formData, setFormData] = useState({
+        email: "",
+        password: "",
+    })
 
     return (
         <div>
