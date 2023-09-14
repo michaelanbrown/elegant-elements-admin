@@ -3,7 +3,7 @@ import '../App.css'
 import { UserContext } from './context/User';
 
 function Welcome() {
-    const { currentCustomer, setCurrentCustomer } = useContext(UserContext);
+    const { currentUser, setCurrentUser } = useContext(UserContext);
 
     return (
         <div>
