@@ -33,6 +33,7 @@ function Signup({ users, setUsers }) {
                 res.json().then(user => {
                     setCurrentUser(user)
                     setUsers([...users, user])
+                    navigate(`/`)
                 })
             } else {
                 res.json().then(json => setErrors(json.errors))
