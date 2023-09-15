@@ -41,7 +41,19 @@ function Signup({ users, setUsers }) {
 
     return (
         <> 
-    sign me up
+            <form onSubmit={onSignUp}>
+                Name: <input type='text' name='name' value={name} onChange={handleChange} />
+                <br/>
+                Email: <input type='text' name='email' value={email} onChange={handleChange} />
+                <br/>
+                Title: <input type='text' name='title' value={title} onChange={handleChange} />
+                <br/>
+                Password: <input type='password' name='password' value={password} onChange={handleChange} />
+                <br/>
+                <input type='submit' value='Sign up!' />
+            </form>
+            { errors ? <br/> : null }
+            { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
         </>
     )
 }
