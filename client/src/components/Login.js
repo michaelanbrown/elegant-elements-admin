@@ -12,7 +12,6 @@ function Login() {
     })
     const {email, password} = formData
     const navigate = useNavigate();
-    console.log(currentUser)
 
     function onLogin(e){
         e.preventDefault()

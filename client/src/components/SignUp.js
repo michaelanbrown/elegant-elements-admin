@@ -13,6 +13,7 @@ function Signup({ users, setUsers }) {
         title: ''
     })
     const {name, email, password, title} = formData
+    const navigate = useNavigate();
 
     function onSignUp(e){
         e.preventDefault()
