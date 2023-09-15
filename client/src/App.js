@@ -9,6 +9,7 @@ import Signup from "./components/SignUp";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
+  const [users, setUsers] = useState([])
 
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Welcome/></Route>
           <Route path="/login"><Login/></Route>
-          <Route path="/signup"><Signup/></Route>
+          <Route path="/signup" users={users} setUsers={setUsers}><Signup/></Route>
         </Switch>
       </BrowserRouter>
     </div>
