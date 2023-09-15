@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import '../App.css'
 import { UserContext } from './context/User';
 
+
 function Login() {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [errors, setErrors] = useState([])
@@ -10,7 +11,7 @@ function Login() {
         password: "",
     })
     const {email, password} = formData
-
+console.log(currentUser)
     function onLogin(e){
         e.preventDefault()
         const user = {

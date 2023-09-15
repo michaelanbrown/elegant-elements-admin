@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./components/Welcome";
 import Header from "./components/Header";
 import './App.css';
@@ -15,11 +15,11 @@ function App() {
     <div className="App">
       <Header />
       <BrowserRouter>
-        <Switch>
-          <Route exact path="/"><Welcome/></Route>
-          <Route path="/login"><Login/></Route>
-          <Route path="/signup" users={users} setUsers={setUsers}><Signup/></Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup sers={users} setUsers={setUsers}/>} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
