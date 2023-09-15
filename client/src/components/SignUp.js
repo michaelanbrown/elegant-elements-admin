@@ -5,6 +5,13 @@ import { UserContext } from './context/User';
 
 function Signup() {
     const { currentUser, setCurrentUser } = useContext(UserContext);
+    const [errors, setErrors] = useState([])
+    const [formData, setFormData] = useState({
+        name:'',
+        email:'',
+        password:'',
+        title: ''
+    })
 
     return (
         <> 
