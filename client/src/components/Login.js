@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import '../App.css'
 import { UserContext } from './context/User';
-
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -11,7 +11,9 @@ function Login() {
         password: "",
     })
     const {email, password} = formData
-console.log(currentUser)
+    const navigate = useNavigate();
+    console.log(currentUser)
+
     function onLogin(e){
         e.preventDefault()
         const user = {
@@ -28,6 +30,7 @@ console.log(currentUser)
             if(res.ok){
                 res.json().then(user => {
                     setCurrentUser(user)
+                    navigate(`/`)
                 })
             } else {
                 res.json().then(json => setErrors([json.errors]))
