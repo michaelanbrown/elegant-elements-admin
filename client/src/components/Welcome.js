@@ -16,7 +16,7 @@ function Welcome() {
             </div>
             <br/>
             <br/>
-            <p><NavLink className='loginSignUp' to="/login">Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;<button className='loginSignUp'>Sign Up</button></p>
+            <p><NavLink className='loginSignUp' to="/login">Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;<NavLink className='loginSignUp' to="/signup">Sign Up</NavLink></p>
         </div>
     )
 }
