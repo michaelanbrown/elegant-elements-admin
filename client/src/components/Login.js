@@ -34,6 +34,13 @@ function Login() {
         }) 
     }
 
+    function handleChange(e) {
+        setFormData({
+            ...formData,
+            [e.target.name] : e.target.value
+        });
+    }
+
     return (
         <div>
             <form onSubmit={onLogin}>
