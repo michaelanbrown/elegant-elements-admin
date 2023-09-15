@@ -5,6 +5,7 @@ import './App.css';
 import { UserContext } from "./components/context/User";
 import { useContext } from 'react';
 import Login from "./components/Login";
+import Signup from "./components/SignUp";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/"><Welcome/></Route>
           <Route path="/login"><Login/></Route>
+          <Route path="/signup"><Signup/></Route>
         </Switch>
       </BrowserRouter>
     </div>
