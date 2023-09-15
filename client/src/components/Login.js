@@ -36,7 +36,15 @@ function Login() {
 
     return (
         <div>
-            hello
+            <form onSubmit={onLogin}>
+                Email: <input type="text" name="email" value={email} onChange={handleChange} />
+                <br/>
+                Password: <input type="password" name="password" value={password} onChange={handleChange} />
+                <br/>
+                <input type="submit" value="Log in" />
+            </form>
+            <br/>
+            { errors ? errors.map(error => <div className='error' key={error}>{error}</div>) :null }
         </div>
     )
 }
