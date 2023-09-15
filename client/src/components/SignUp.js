@@ -3,7 +3,7 @@ import '../App.css'
 import { UserContext } from './context/User';
 
 
-function Signup() {
+function Signup({ users, setUsers }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [errors, setErrors] = useState([])
     const [formData, setFormData] = useState({
@@ -41,7 +41,7 @@ function Signup() {
 
     return (
         <> 
-
+    sign me up
         </>
     )
 }
