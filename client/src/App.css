@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(0, 13, 27);
+  font-size: 150%;
 }
 
 .App-logo {
@@ -44,10 +45,6 @@ body {
   color: white;
 }
 
-.welcome{
-  font-size: 150%;
-}
-
 .elegant-header{
   font-size: 250%;
 }
@@ -57,7 +54,6 @@ body {
   border: 10;
   background: black;
   cursor: pointer;
-  font-size: 150%;
   color: white
 }
 

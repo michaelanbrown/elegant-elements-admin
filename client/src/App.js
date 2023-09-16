@@ -10,6 +10,7 @@ import Signup from "./components/SignUp";
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
   const [users, setUsers] = useState([])
+  console.log(currentUser)
 
   return (
     <div className="App">  
