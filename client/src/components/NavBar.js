@@ -6,7 +6,17 @@ import { UserContext } from './context/User';
 export default function NavBar ({})  {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const navigate = useNavigate();
-
+    const onLogOut = () => {
+        fetch(`/logout`, {
+          method:"DELETE"
+        })
+        .then(res =>{
+          if(res.ok){
+            setCurrentUser(false)
+            navigate(`/`)
+          }
+        })
+      }
 
     return (
         <nav className="NavBar">
