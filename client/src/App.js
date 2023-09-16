@@ -9,6 +9,7 @@ import Signup from "./components/SignUp";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
+  const [errors, setErrors] = useState([])
   const [users, setUsers] = useState([])
   const [categories, setCategories] = useState([])
 
