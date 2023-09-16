@@ -3,7 +3,7 @@ import Welcome from "./components/Welcome";
 import Header from "./components/Header";
 import './App.css';
 import { UserContext } from "./components/context/User";
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
 
