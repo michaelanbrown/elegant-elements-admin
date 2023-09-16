@@ -1,6 +1,6 @@
 import '../App.css'
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import { UserContext } from './context/User';
 
 export default function NavBar ({})  {
@@ -8,7 +8,9 @@ export default function NavBar ({})  {
 
     return (
         <div>
+            <BrowserRouter>
             <NavLink to="/">Welcome</NavLink>
+            </BrowserRouter>
         </div>
     )
 }
