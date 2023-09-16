@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import '../App.css'
+import React, { useContext } from "react";
+import { UserContext } from './context/User';
 
 function Welcome() {
+    const { currentUser, setCurrentUser } = useContext(UserContext);
 
     return (
         <div>
