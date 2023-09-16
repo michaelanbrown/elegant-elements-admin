@@ -8,7 +8,7 @@ export default function NavBar ({})  {
 
     return (
         <div>
-            <NavLink className="Navelements" to="/">Welcome</NavLink>
+            <NavLink to="/">Welcome</NavLink>
         </div>
     )
 }

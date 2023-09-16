@@ -1,7 +1,7 @@
 import React from "react";
-// import NavBar from "./NavBar";
+import NavBar from "./NavBar";
 
-function Header({ productCount, setProductCount, custAddresses }) {
+function Header({}) {
 
   return (
     <div className="Header">
@@ -12,6 +12,7 @@ function Header({ productCount, setProductCount, custAddresses }) {
             <br/>
             <p className="active"><em className="welcome">✨Adding a touch of inspiration and elegance to your every day life✨</em></p>
             <img className="eleganceimg" src={"https://i.imgur.com/upX3ZLK.png"} alt="Elegant Elements" width="20%" height="20%"/>
+            <NavBar />
         </div>  
       </header>
     </div>
