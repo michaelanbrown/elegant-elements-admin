@@ -40,6 +40,17 @@ function App() {
     })
   }
 
+  function getProducts() {
+    fetch("/products")
+    .then((res) => {
+      if(res.ok){
+        res.json().then(setProducts)
+      } else {
+        res.json().then(json => setErrors([json.error]))
+      }
+    })
+  }
+
   return (
     <div className="App">  
       <BrowserRouter>
