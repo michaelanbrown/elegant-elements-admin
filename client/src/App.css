@@ -66,3 +66,15 @@ body {
   top: 0%;
   right: 3%
 }
+
+.logout{
+  cursor: pointer;
+  font-size: 145%;
+  color: white;
+  outline: none;
+  padding: 5px; 
+  border: 0px; 
+  box-sizing: none; 
+  background-color: transparent;
+  text-decoration: underline
+}

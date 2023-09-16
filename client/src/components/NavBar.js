@@ -12,6 +12,8 @@ export default function NavBar ({})  {
             <BrowserRouter>
                 <NavLink className='loginSignUp' to="/">Welcome</NavLink>
             </BrowserRouter>
+            <br/>
+            <button className='logout'>Logout</button>
         </nav>
     )
 }
