@@ -5,6 +5,8 @@ import { UserContext } from './context/User';
 
 export default function NavBar ({})  {
     const { currentUser, setCurrentUser } = useContext(UserContext);
+    const navigate = useNavigate();
+
 
     return (
         <nav className="NavBar">
