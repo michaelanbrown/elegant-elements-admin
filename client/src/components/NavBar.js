@@ -7,7 +7,7 @@ export default function NavBar ({})  {
 
     return (
         <div>
-
+            <NavLink className="Navelements" to="/">Welcome</NavLink>
         </div>
     )
 }
