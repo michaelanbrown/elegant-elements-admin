@@ -60,3 +60,9 @@ body {
   font-size: 150%;
   color: white
 }
+
+.NavBar{
+  position: fixed;
+  top: 0%;
+  right: 3%
+}

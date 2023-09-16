@@ -7,10 +7,11 @@ export default function NavBar ({})  {
     const { currentUser, setCurrentUser } = useContext(UserContext);
 
     return (
-        <div>
+        <nav className="NavBar">
+            <br/>
             <BrowserRouter>
-            <NavLink to="/">Welcome</NavLink>
+                <NavLink className='loginSignUp' to="/">Welcome</NavLink>
             </BrowserRouter>
-        </div>
+        </nav>
     )
 }
