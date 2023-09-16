@@ -12,13 +12,13 @@ function App() {
   const [users, setUsers] = useState([])
 
   return (
-    <div className="App">
-      <Header />
+    <div className="App">  
       <BrowserRouter>
+      <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup sers={users} setUsers={setUsers}/>} />
+          <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
         </Routes>
       </BrowserRouter>
     </div>
