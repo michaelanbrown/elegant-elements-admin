@@ -12,6 +12,7 @@ function App() {
   const [errors, setErrors] = useState([])
   const [users, setUsers] = useState([])
   const [categories, setCategories] = useState([])
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     fetch("/authorized_user")
