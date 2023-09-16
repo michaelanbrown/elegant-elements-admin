@@ -19,11 +19,11 @@ export default function NavBar ({})  {
       }
 
     return (
-        <nav className="NavBar">
-            <br/>
-            <NavLink className='loginSignUp' to="/">Welcome</NavLink>
-            <br/>
-            <button onClick={onLogOut} className='logout'>Logout</button>
-        </nav>
+        currentUser ? <nav className="NavBar">
+          <br/>
+          <NavLink className='loginSignUp' to="/">Welcome</NavLink>
+          <br/>
+          <button onClick={onLogOut} className='logout'>Logout</button>
+        </nav> : null
     )
 }
