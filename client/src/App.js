@@ -20,6 +20,7 @@ function App() {
         res.json()
         .then(user => {
           setCurrentUser(user)
+          getCategories()
         })
       } else {
         res.json().then(json => setErrors([json.error]))
