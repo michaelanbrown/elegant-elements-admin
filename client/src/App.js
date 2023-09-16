@@ -22,6 +22,7 @@ function App() {
         .then(user => {
           setCurrentUser(user)
           getCategories()
+          getProducts()
         })
       } else {
         res.json().then(json => setErrors([json.error]))
