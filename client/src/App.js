@@ -12,6 +12,20 @@ function App() {
   const [users, setUsers] = useState([])
   const [categories, setCategories] = useState([])
 
+  useEffect(() => {
+    fetch("/authorized_user")
+    .then(res => {
+      if (res.ok) {
+        res.json()
+        .then(user => {
+          setCurrentUser(user)
+        })
+      } else {
+        res.json().then(json => setErrors([json.error]))
+      }
+    })
+  })
+
   return (
     <div className="App">  
       <BrowserRouter>
