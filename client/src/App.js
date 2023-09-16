@@ -10,7 +10,7 @@ import Signup from "./components/SignUp";
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
   const [users, setUsers] = useState([])
-  console.log(currentUser)
+  const [categories, setCategories] = useState([])
 
   return (
     <div className="App">  
