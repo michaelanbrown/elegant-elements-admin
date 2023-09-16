@@ -25,7 +25,7 @@ function App() {
         res.json().then(json => setErrors([json.error]))
       }
     })
-  })
+  }, [])
 
   return (
     <div className="App">  
