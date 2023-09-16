@@ -19,7 +19,7 @@ function Welcome() {
             </div>
             <br/>
             <br/>
-            <p><NavLink className='loginSignUp' to="/login">Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;<NavLink className='loginSignUp' to="/signup">Sign Up</NavLink></p>
+            {currentUser == false ? <p><NavLink className='loginSignUp' to="/login">Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;<NavLink className='loginSignUp' to="/signup">Sign Up</NavLink></p> : null }
         </div>
     )
 }
