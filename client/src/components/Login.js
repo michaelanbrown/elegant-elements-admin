@@ -47,9 +47,9 @@ function Login() {
     return (
         <div>
             <form onSubmit={onLogin}>
-                Email: <input type="text" name="email" value={email} onChange={handleChange} />
+                Email: <input className="formFields" type="text" name="email" value={email} onChange={handleChange} />
                 <br/>
-                Password: <input type="password" name="password" value={password} onChange={handleChange} />
+                Password: <input className="formFields" type="password" name="password" value={password} onChange={handleChange} />
                 <br/>
                 <input type="submit" value="Log in" />
             </form>
