@@ -23,6 +23,8 @@ export default function NavBar ({})  {
           <br/>
           <NavLink className='loginSignUp' to="/">Welcome</NavLink>
           <br/>
+          <NavLink className='loginSignUp' to="/categories">Categories</NavLink>
+          <br/>
           <button onClick={onLogOut} className='logout'>Logout</button>
         </nav> : null
     )
