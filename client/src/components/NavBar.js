@@ -25,6 +25,8 @@ export default function NavBar ({})  {
           <br/>
           <NavLink className='navbarlink' to="/categories">Categories</NavLink>
           <br/>
+          <NavLink className='navbarlink' to="/products">Products</NavLink>
+          <br/>
           <button onClick={onLogOut} className='logout'>Logout</button>
         </nav> : null
     )
