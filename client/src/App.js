@@ -63,6 +63,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
           <Route path="/categories" element={<Categories/>} />
+          <Route path="/products" element={<Products/>} />
         </Routes>
       </BrowserRouter>
     </div>
