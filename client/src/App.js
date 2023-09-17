@@ -7,6 +7,7 @@ import { useState, useContext, useEffect } from 'react';
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import Categories from "./components/Categories";
+import Products from "./components/Products";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
