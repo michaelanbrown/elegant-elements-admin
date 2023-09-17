@@ -6,6 +6,7 @@ import { UserContext } from "./components/context/User";
 import { useState, useContext, useEffect } from 'react';
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
+import Categories from "./components/Categories";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
