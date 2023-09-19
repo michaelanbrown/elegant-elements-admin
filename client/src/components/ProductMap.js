@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductMap({  }) {
+function ProductMap({ prod, name, quantity, price, status }) {
 
   return (
     <div>
