@@ -1,4 +1,5 @@
 import React from "react";
+import ProductMap from "./ProductMap";
 
 function Products({ products, setProducts }) {
 
