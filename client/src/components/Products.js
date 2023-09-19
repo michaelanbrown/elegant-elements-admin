@@ -1,6 +1,6 @@
 import React from "react";
 
-function Products({}) {
+function Products({ products, setProducts }) {
 
   return (
     <div>
