@@ -62,7 +62,7 @@ function App() {
           <Route path="/" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
-          <Route path="/categories" element={<Categories/>} />
+          <Route path="/categories" element={<Categories categories={getCategories} setCategories={setCategories}/>} />
           <Route path="/products" element={<Products/>} />
         </Routes>
       </BrowserRouter>
