@@ -10,7 +10,7 @@ function Products({ products, setProducts }) {
 
   return (
     <div>
-      
+      {productMap}
     </div>
   );
 }
