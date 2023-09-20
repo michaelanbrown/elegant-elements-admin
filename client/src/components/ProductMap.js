@@ -5,7 +5,8 @@ function ProductMap({ prod, name, quantity, price, status }) {
 
   return (
     <div>
-      <p>{name}</p>
+      <h4>{name}</h4>
+      <p>Status: {status}</p>
     </div>
   );
 }
