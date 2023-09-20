@@ -12,6 +12,7 @@ function ProductMap({ prod, name, quantity, price, status }) {
       <br/>
       {price.toString()[price.toString().length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
       </p>
+      <br/>
     </div>
   );
 }
