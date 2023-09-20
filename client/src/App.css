@@ -78,3 +78,6 @@ body {
 .formFields{
   font-size: 75%;
 }
+
+.lessSpace { margin-bottom: 0;
+padding: 0px; }

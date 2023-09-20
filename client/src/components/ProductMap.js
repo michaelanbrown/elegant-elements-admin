@@ -5,7 +5,7 @@ function ProductMap({ prod, name, quantity, price, status }) {
 
   return (
     <div>
-      <h4>{name}</h4>
+      <h4 className="lessSpace">{name}</h4>
       <p>Status: {status}
       <br/>
       Quantity: {quantity}
