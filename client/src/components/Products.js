@@ -4,7 +4,7 @@ import ProductMap from "./ProductMap";
 function Products({ products, setProducts }) {
 
   const productMap = products.map(prod => {
-    <ProductMap key={prod.id} prod={prod} name={prod.name} price={prod.price} quantity={prod.quantity} status={prod.status}/>
+    return <ProductMap key={prod.id} prod={prod} name={prod.name} price={prod.price} quantity={prod.quantity} status={prod.status}/>
   })
 
 
