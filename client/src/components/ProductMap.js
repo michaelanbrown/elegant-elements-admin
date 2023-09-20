@@ -4,7 +4,7 @@ import '../App.css'
 function ProductMap({ prod, name, quantity, price, status }) {
 
   return (
-    <div>
+    <div className="ProductCard">
       <h4 className="lessSpace">{name}</h4>
       <p>Status: {status}
       <br/>
