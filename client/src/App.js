@@ -65,7 +65,7 @@ function App() {
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
           <Route path="/categories" element={<Categories categories={getCategories} setCategories={setCategories}/>} />
           <Route path="/products/*" element={<Products products={products} setProducts={setProducts}/>} />
-          <Route path="/products/:id" element={<ProductMap />} />
+          {/* <Route path="/products/:id" element={<ProductMap />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
