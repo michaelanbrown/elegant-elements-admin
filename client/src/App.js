@@ -9,6 +9,7 @@ import Signup from "./components/SignUp";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
 import ProductMap from "./components/ProductMap";
+import IndividualProduct from "./components/IndividualProduct";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -65,7 +66,7 @@ function App() {
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
           <Route path="/categories" element={<Categories categories={getCategories} setCategories={setCategories}/>} />
           <Route path="/products/*" element={<Products products={products} setProducts={setProducts}/>} />
-          {/* <Route path="/products/:id" element={<ProductMap />} /> */}
+          <Route path="/products/:id" element={<IndividualProduct />} />
         </Routes>
       </BrowserRouter>
     </div>
