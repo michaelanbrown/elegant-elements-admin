@@ -10,7 +10,7 @@ function IndividualProduct({ products, setProducts }) {
     const { id } = useParams();
     
     useEffect(() => {
-        fetch(`/${id}`)
+        fetch(`/products/${id}`)
         .then(res => {
            if (res.ok) {
             res.json()
