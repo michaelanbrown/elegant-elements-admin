@@ -3,7 +3,7 @@ import '../App.css'
 import { UserContext } from './context/User';
 import { useNavigate } from 'react-router-dom';
 
-function Login({ getCategories }) {
+function Login({ getCategories, getProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [errors, setErrors] = useState([])
     const [formData, setFormData] = useState({
