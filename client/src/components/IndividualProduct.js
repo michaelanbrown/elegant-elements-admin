@@ -5,7 +5,8 @@ import { useParams } from 'react-router-dom';
 
 function IndividualProduct({ products, setProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
-    console.log()
+    const { id } = useParams();
+    
     useEffect(() => {
         fetch()
 
