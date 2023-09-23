@@ -5,6 +5,11 @@ import { UserContext } from './context/User';
 function IndividualProduct({ products, setProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
 
+    useEffect(() => {
+        fetch()
+
+      }, [])
+
     return (
         <div>
 
