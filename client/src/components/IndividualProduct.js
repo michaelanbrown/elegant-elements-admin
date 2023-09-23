@@ -1,5 +1,5 @@
 import '../App.css'
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserContext } from './context/User';
 
 function IndividualProduct({ products, setProducts }) {
