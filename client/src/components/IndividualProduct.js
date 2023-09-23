@@ -18,7 +18,7 @@ function IndividualProduct({ products, setProducts }) {
               setProduct(product)  
             })
            } else {
-
+            res.json().then(json => setErrors([json.error]))
            }
         })
       }, [])
