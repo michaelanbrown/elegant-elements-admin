@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 function IndividualProduct({ products, setProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
+    const [product, setProduct] = useState("")
     const { id } = useParams();
     
     useEffect(() => {
@@ -13,7 +14,7 @@ function IndividualProduct({ products, setProducts }) {
            if (res.ok) {
             res.json()
             .then(product => {
-                
+
             })
            } 
         })
