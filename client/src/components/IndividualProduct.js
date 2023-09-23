@@ -8,8 +8,10 @@ function IndividualProduct({ products, setProducts }) {
     const { id } = useParams();
     
     useEffect(() => {
-        fetch()
-
+        fetch(`/${id}`)
+        .then(res => {
+            
+        })
       }, [])
 
     return (
