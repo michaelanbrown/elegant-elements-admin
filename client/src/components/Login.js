@@ -30,6 +30,7 @@ function Login({ getCategories, getProducts }) {
                 res.json().then(user => {
                     setCurrentUser(user)
                     getCategories()
+                    getProducts()
                     navigate(`/`)
                 })
             } else {
