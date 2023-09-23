@@ -29,6 +29,7 @@ function Login({ getCategories }) {
             if(res.ok){
                 res.json().then(user => {
                     setCurrentUser(user)
+                    getCategories()
                     navigate(`/`)
                 })
             } else {
