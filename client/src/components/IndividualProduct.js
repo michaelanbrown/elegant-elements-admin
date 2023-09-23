@@ -10,7 +10,12 @@ function IndividualProduct({ products, setProducts }) {
     useEffect(() => {
         fetch(`/${id}`)
         .then(res => {
-            
+           if (res.ok) {
+            res.json()
+            .then(product => {
+                
+            })
+           } 
         })
       }, [])
 
