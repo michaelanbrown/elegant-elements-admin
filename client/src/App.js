@@ -61,7 +61,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/login" element={<Login getCategories={getCategories}/>} />
+          <Route path="/login" element={<Login getCategories={getCategories} getProducts={getProducts}/>} />
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers}/>} />
           <Route path="/categories" element={<Categories categories={getCategories} setCategories={setCategories}/>} />
           <Route path="/products/*" element={<Products products={products} setProducts={setProducts}/>} />
