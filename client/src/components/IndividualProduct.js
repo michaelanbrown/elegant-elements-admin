@@ -7,6 +7,7 @@ function IndividualProduct({ products, setProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [product, setProduct] = useState({})
     const [errors, setErrors] = useState([])
+    const [price, setPrice] = usestate("")
     const { id } = useParams();
     
     useEffect(() => {
