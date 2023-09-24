@@ -29,6 +29,7 @@ function IndividualProduct({ products, setProducts }) {
         <div>
           <h1>{product.name}</h1>
           <p>Category: { product.category ? product.category.name : null }
+          <br/>
           Status: {product.status}
           <br/>
           { price[price.length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
