@@ -27,6 +27,7 @@ function IndividualProduct({ products, setProducts }) {
     return (
         <div>
           <h1>{product.name}</h1>
+          <p>Status: {product.status}</p>
         </div>
     )
 }
