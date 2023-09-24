@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     end
 
     def show
-        render json: @product, status: :ok
+        render json: @product, status: :ok,
         serializer: ProductsSerializer
     end
 
