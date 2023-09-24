@@ -29,7 +29,9 @@ function IndividualProduct({ products, setProducts }) {
         <div>
           <h1>{product.name}</h1>
           <p>Status: {product.status}
+          <br/>
           { price[price.length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
+          <br/>
           Current Qty: {product.quantity}</p>
         </div>
     )
