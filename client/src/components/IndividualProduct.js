@@ -25,12 +25,11 @@ function IndividualProduct({ products, setProducts }) {
         })
       }, [])
 
-      console.log(product)
-
     return (
         <div>
           <h1>{product.name}</h1>
-          <p>Status: {product.status}
+          <p>Category: { product.category ? product.category.name : null }
+          Status: {product.status}
           <br/>
           { price[price.length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
           <br/>
