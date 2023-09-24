@@ -25,6 +25,8 @@ function IndividualProduct({ products, setProducts }) {
         })
       }, [])
 
+      console.log(product)
+
     return (
         <div>
           <h1>{product.name}</h1>
