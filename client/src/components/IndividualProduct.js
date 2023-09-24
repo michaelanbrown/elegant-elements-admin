@@ -7,7 +7,7 @@ function IndividualProduct({ products, setProducts }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [product, setProduct] = useState({})
     const [errors, setErrors] = useState([])
-    const [price, setPrice] = usestate("")
+    const [price, setPrice] = useState("")
     const { id } = useParams();
     
     useEffect(() => {
@@ -24,7 +24,7 @@ function IndividualProduct({ products, setProducts }) {
            }
         })
       }, [])
-
+      console.log(price)
 
     return (
         <div>
