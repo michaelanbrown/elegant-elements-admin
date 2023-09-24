@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
     def show
         render json: @product, status: :ok
+        serializer: ProductsSerializer
     end
 
     def create
