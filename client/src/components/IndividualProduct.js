@@ -17,7 +17,7 @@ function IndividualProduct({ products, setProducts }) {
             res.json()
             .then(product => {
               setProduct(product)  
-              setPrice(product.price)
+              setPrice(product.price.toString())
             })
            } else {
             res.json().then(json => setErrors([json.error]))
@@ -30,6 +30,7 @@ function IndividualProduct({ products, setProducts }) {
         <div>
           <h1>{product.name}</h1>
           <p>Status: {product.status}</p>
+          <p></p>
         </div>
     )
 }
