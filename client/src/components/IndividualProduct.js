@@ -17,6 +17,7 @@ function IndividualProduct({ products, setProducts }) {
             res.json()
             .then(product => {
               setProduct(product)  
+              setPrice(product.price)
             })
            } else {
             res.json().then(json => setErrors([json.error]))
