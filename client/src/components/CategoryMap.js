@@ -7,7 +7,10 @@ function CategoryMap({ category, categories, setCategories }) {
 
     return (
         <div>
-
+            <h3>{category.name}</h3>
+            <p>{category.description}</p>
+            <br/>
+            <br/>
         </div>
     )
 }
