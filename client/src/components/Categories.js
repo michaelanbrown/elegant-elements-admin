@@ -7,7 +7,7 @@ function Categories({ categories, setCategories }) {
   const { currentUser, setCurrentUser } = useContext(UserContext);
 
   const categoryMap = categories.sort((a, b) => a.name.localeCompare(b.name)).map(category => {
-   
+    return <CategoryMap key={category.id} category={category}/>
   })
 
 
