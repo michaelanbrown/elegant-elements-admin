@@ -13,7 +13,7 @@ function Categories({ categories, setCategories }) {
 
   return (
     <div>
-
+      {categoryMap}
     </div>
   );
 }
