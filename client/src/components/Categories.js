@@ -10,6 +10,7 @@ function Categories({ categories, setCategories }) {
     return <CategoryMap key={category.id} category={category}/>
   })
 
+  //add a filter
 
   return (
     <div>

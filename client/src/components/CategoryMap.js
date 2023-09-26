@@ -5,6 +5,8 @@ import { UserContext } from './context/User';
 function CategoryMap({ category, categories, setCategories }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
 
+    //add a drop down for products in category
+
     return (
         <div>
             <h3>{category.name}</h3>
