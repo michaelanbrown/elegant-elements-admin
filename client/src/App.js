@@ -63,7 +63,7 @@ function App() {
           <Route path="/" element={<Welcome />} />
           <Route path="/login" element={<Login getCategories={getCategories} getProducts={getProducts}/>} />
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers} getCategories={getCategories} getProducts={getProducts}/>} />
-          <Route path="/categories" element={<Categories categories={getCategories} setCategories={setCategories}/>} />
+          <Route path="/categories" element={<Categories categories={categories} setCategories={setCategories}/>} />
           <Route path="/products/*" element={<Products products={products} setProducts={setProducts}/>} />
           <Route path="/products/:id" element={<IndividualProduct products={products} setProducts={setProducts}/>} />
         </Routes>
