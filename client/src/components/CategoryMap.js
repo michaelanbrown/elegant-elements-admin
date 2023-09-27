@@ -6,7 +6,6 @@ function CategoryMap({ category, categories, setCategories }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
 
     //add a drop down for products in category
-    //add serializer to show products within a given category
 
     return (
         <div>
