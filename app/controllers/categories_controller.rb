@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
 
     def show
         render json: @category, status: :ok
+        serializer: CategoriesSerializer
     end
 
     def create
