@@ -5,7 +5,6 @@ import CategoryMap from './CategoryMap';
 
 function Categories({ categories, setCategories }) {
   const { currentUser, setCurrentUser } = useContext(UserContext);
-  const [filteredCategories, setFilteredCategories] = useState(categories)
   const [categoryFiltering, setCategoryFiltering] = useState("")
 
   const categoryMap = filteredCategories.sort((a, b) => a.name.localeCompare(b.name)).map(category => {
