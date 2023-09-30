@@ -15,6 +15,9 @@ function Categories({ categories, setCategories }) {
 
   return (
     <div>
+      <form>
+        
+      </form>
       {categoryMap}
     </div>
   );
