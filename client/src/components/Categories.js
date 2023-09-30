@@ -21,7 +21,7 @@ function Categories({ categories, setCategories }) {
   return (
     <div>
       <form>
-        Search by Category: <input className="formFields" type="text" name="categoryFiltering" value={categoryFiltering} onChange={} />
+        Search by Category: <input className="formFields" type="text" name="categoryFiltering" value={categoryFiltering} onChange={handleChange} />
       </form>
       {categoryMap}
     </div>
