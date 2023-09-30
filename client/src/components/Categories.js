@@ -12,11 +12,16 @@ function Categories({ categories, setCategories }) {
     return <CategoryMap key={category.id} category={category}/>
   })
 
+  useEffect(() => {
+
+  }, [])
+
   //add a filter
 
   function handleChange(e) {
-    setCategoryFiltering(e.target.value);
-}
+    setCategoryFiltering(e.target.value)
+  }
+  console.log(filteredCategories)
 
   return (
     <div>
