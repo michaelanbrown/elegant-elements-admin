@@ -1,5 +1,5 @@
 import '../App.css'
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { UserContext } from './context/User';
 import CategoryMap from './CategoryMap';
 
@@ -12,16 +12,11 @@ function Categories({ categories, setCategories }) {
     return <CategoryMap key={category.id} category={category}/>
   })
 
-  useEffect(() => {
-    setFilteredCategories(categories)
-  }, [categories])
-
   //add a filter
 
   function handleChange(e) {
     setCategoryFiltering(e.target.value)
   }
-  console.log(filteredCategories)
 
   return (
     <div>
