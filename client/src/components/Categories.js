@@ -14,6 +14,13 @@ function Categories({ categories, setCategories }) {
 
   //add a filter
 
+  function handleChange(e) {
+    setFormData({
+        ...formData,
+        [e.target.name] : e.target.value
+    });
+}
+
   return (
     <div>
       <form>
