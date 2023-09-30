@@ -7,7 +7,7 @@ function Categories({ categories, setCategories }) {
   const { currentUser, setCurrentUser } = useContext(UserContext);
   const [categoryFiltering, setCategoryFiltering] = useState("")
 
-  const filteredCategories = categories.filter(category => category.name.toLowerCase().indexOf(categoryFiltering.toLowerCase() > -1))
+  const filteredCategories = categories.filter(category => category.name.toLowerCase().indexOf(categoryFiltering.toLowerCase()) > -1)
 
   const categoryMap = filteredCategories.sort((a, b) => a.name.localeCompare(b.name)).map(category => {
     return <CategoryMap key={category.id} category={category}/>
