@@ -13,8 +13,8 @@ function Categories({ categories, setCategories }) {
   })
 
   useEffect(() => {
-
-  }, [])
+    setFilteredCategories(categories)
+  }, [categories])
 
   //add a filter
 
