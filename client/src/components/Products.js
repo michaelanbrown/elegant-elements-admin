@@ -21,7 +21,7 @@ function Products({ products, setProducts }) {
   return (
     <div>
       <form>
-        Search by Product: <input className="formFields" type="text" name="productFiltering" value={productFiltering} onChange={} />
+        Search by Product: <input className="formFields" type="text" name="productFiltering" value={productFiltering} onChange={handleChange} />
       </form>
       {productMap}
     </div>
