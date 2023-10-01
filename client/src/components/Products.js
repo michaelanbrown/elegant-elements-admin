@@ -12,6 +12,10 @@ function Products({ products, setProducts }) {
     return <ProductMap key={prod.id} prod={prod} name={prod.name} price={prod.price} quantity={prod.quantity} status={prod.status}/>
   })
 
+  function handleChange(e) {
+    setProductFiltering(e.target.value)
+  }
+
   //add a filter
 
   return (
