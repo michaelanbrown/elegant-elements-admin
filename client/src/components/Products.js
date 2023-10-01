@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductMap from "./ProductMap";
 
 function Products({ products, setProducts }) {
