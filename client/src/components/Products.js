@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { UserContext } from './context/User';
 import ProductMap from "./ProductMap";
 
 function Products({ products, setProducts }) {
