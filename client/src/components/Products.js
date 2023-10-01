@@ -16,7 +16,6 @@ function Products({ products, setProducts }) {
     setProductFiltering(e.target.value)
   }
 
-  //add a filter
 
   return (
     <div>
