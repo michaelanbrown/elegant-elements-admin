@@ -13,7 +13,6 @@ function Categories({ categories, setCategories }) {
     return <CategoryMap key={category.id} category={category}/>
   })
 
-  //add a filter
 
   function handleChange(e) {
     setCategoryFiltering(e.target.value)
