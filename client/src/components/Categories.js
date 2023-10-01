@@ -23,6 +23,8 @@ function Categories({ categories, setCategories }) {
       <form>
         Search by Category: <input className="formFields" type="text" name="categoryFiltering" value={categoryFiltering} onChange={handleChange} />
       </form>
+      <br/>
+      <br/>
       {categoryMap}
     </div>
   );
