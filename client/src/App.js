@@ -32,6 +32,7 @@ function App() {
       }
     })
   }, [])
+  console.log("test")
 
   function getCategories() {
     fetch("/categories")
