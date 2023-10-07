@@ -47,7 +47,7 @@ function IndividualProduct({ products, setProducts }) {
           { price[price.length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
           <br/>
           Current Qty: {product.quantity}</p>
-          <button>Add to Inventory</button><button> Remove from Inventory</button>
+          <form>Add to Inventory</form><button> Remove from Inventory</button>
         </div>
     )
 }
