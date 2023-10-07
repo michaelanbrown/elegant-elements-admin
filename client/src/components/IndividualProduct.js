@@ -25,9 +25,16 @@ function IndividualProduct({ products, setProducts }) {
         })
       }, [])
 
-      function inventoryAddition() {
-        
-      }
+    function inventoryAddition() {
+      fetch(`/products/${id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type" : "application/json",
+          "Accept" : "application/json"
+        },
+        body: JSON.stringify(additionData)
+      })
+     }
 
     return (
         <div>
