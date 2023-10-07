@@ -25,6 +25,10 @@ function IndividualProduct({ products, setProducts }) {
         })
       }, [])
 
+      function inventoryAddition() {
+        
+      }
+
     return (
         <div>
           <h1>{product.name}</h1>
