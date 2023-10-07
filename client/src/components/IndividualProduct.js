@@ -8,6 +8,7 @@ function IndividualProduct({ products, setProducts }) {
     const [product, setProduct] = useState({})
     const [errors, setErrors] = useState([])
     const [price, setPrice] = useState("")
+    const [additionData, setAdditionData] = useState(0)
     const { id } = useParams();
     
     useEffect(() => {
