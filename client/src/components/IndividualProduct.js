@@ -40,7 +40,7 @@ function IndividualProduct({ products, setProducts }) {
         body: JSON.stringify({quantity: product.quantity + additionData})
       }).then(res => {
         if(res.ok) {
-          res.json()
+          res.json(setProduct({...product, quantity: product.quantity + additionData}))
         }
       })
      }
