@@ -40,7 +40,9 @@ function IndividualProduct({ products, setProducts }) {
         body: JSON.stringify(additionData)
       })
      }
-     //finish inventoryaddition function, finish onchange handleadditionchange function
+
+     //check inventoryaddition function, handleadditionchange function
+     //finish inventoryaddition function
      //create inventoryremve function, create onchange handleremovalchange function, create dtate for removaldata
 
     return (
