@@ -46,7 +46,6 @@ function IndividualProduct({ products, setProducts }) {
      }
 
      //check inventoryaddition function, handleadditionchange function
-     //finish inventoryaddition function
      //create inventoryremve function, create onchange handleremovalchange function, create dtate for removaldata
 
     return (
