@@ -37,7 +37,11 @@ function IndividualProduct({ products, setProducts }) {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
         },
-        body: JSON.stringify(additionData)
+        body: JSON.stringify({quantity: product.quantity + additionData})
+      }).then(res => {
+        if(res.ok) {
+          res.json()
+        }
       })
      }
 
