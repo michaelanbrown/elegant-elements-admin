@@ -46,6 +46,10 @@ function IndividualProduct({ products, setProducts }) {
       })
      }
 
+    function handleRemovalChange(e) {
+      setRemovalData(e.target.value);
+    }  
+
      //check inventoryaddition function, handleadditionchange function
      //create inventoryremve function, create onchange handleremovalchange function
 
