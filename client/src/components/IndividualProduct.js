@@ -26,6 +26,10 @@ function IndividualProduct({ products, setProducts }) {
         })
       }, [])
 
+    function handleAdditionChange(e) {
+      setAdditionData(e.target.value);
+    }  
+
     function inventoryAddition() {
       fetch(`/products/${id}`, {
         method: 'PATCH',
