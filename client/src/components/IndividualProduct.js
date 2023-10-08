@@ -61,7 +61,9 @@ function IndividualProduct({ products, setProducts }) {
           <form onSubmit={inventoryAddition}>
             Add to Inventory: <input  type="text" name="additionData" value={additionData} onChange={handleAdditionChange} />
           </form>
-          <form> Remove from Inventory</form>
+          <form>
+            Remove from Inventory: <input  type="text" name="removalData" value={removalData} onChange={handleRemovalChange} />
+          </form>
         </div>
     )
 }
