@@ -33,6 +33,6 @@ class ProductsController < ApplicationController
     end
 
     def update_product_params
-        params.permit(:status, :quantity, :price)
+        params.permit(:status, :quantity)
     end
 end
