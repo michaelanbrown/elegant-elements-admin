@@ -44,11 +44,26 @@ function IndividualProduct({ products, setProducts }) {
           res.json(setProduct({...product, quantity: product.quantity + additionData}))
         }
       })
-     }
+    }
 
     function handleRemovalChange(e) {
       setRemovalData(e.target.value);
-    }  
+    }
+
+    function inventoryRemoval() {
+      fetch(`/products/${id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type" : "application/json",
+          "Accept" : "application/json"
+        },
+        body: JSON.stringify({quantity: product.quantity + additionData})
+      }).then(res => {
+        if(res.ok) {
+          res.json(setProduct({...product, quantity: product.quantity + additionData}))
+        }
+      })
+    }
 
      //check inventoryaddition function, handleadditionchange function
      //check handleremovalchange function
