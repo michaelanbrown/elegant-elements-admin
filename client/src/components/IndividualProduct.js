@@ -57,10 +57,10 @@ function IndividualProduct({ products, setProducts }) {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
         },
-        body: JSON.stringify({quantity: product.quantity + additionData})
+        body: JSON.stringify({quantity: product.quantity - removalData})
       }).then(res => {
         if(res.ok) {
-          res.json(setProduct({...product, quantity: product.quantity + additionData}))
+          res.json(setProduct({...product, quantity: product.quantity - additionData}))
         }
       })
     }
