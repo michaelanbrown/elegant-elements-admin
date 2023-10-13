@@ -12,6 +12,10 @@ function CategoryMap({ category, categories, setCategories }) {
         <li>{product.name}</li>
     })
 
+    function onClick() {
+        
+    }
+
     return (
         <div>
             <h3>{category.name}</h3>
