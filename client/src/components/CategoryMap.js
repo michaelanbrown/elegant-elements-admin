@@ -4,6 +4,7 @@ import { UserContext } from './context/User';
 
 function CategoryMap({ category, categories, setCategories }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
+    const [show, setShow] = useState(false)
 
     //add a drop down for products in category
     //each drop down item will direct you to the individual products page for that product
@@ -13,7 +14,7 @@ function CategoryMap({ category, categories, setCategories }) {
     })
 
     function onClick() {
-        
+
     }
 
     return (
