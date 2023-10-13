@@ -14,7 +14,7 @@ function CategoryMap({ category, categories, setCategories }) {
     })
 
     function onClick() {
-
+        setShow(!show)
     }
 
     return (
