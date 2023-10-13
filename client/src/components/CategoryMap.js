@@ -8,7 +8,9 @@ function CategoryMap({ category, categories, setCategories }) {
     //add a drop down for products in category
     //each drop down item will direct you to the individual products page for that product
 
-    const productDropDown = category.products.map()
+    const productDropDown = category.products.map(product => {
+        <li>{product.name}</li>
+    })
 
     return (
         <div>
