@@ -16,6 +16,7 @@ function CategoryMap({ category, categories, setCategories }) {
         <div>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
+            <button>Show Products</button>
             <br/>
             <br/>
         </div>
