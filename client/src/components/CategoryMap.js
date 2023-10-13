@@ -13,7 +13,7 @@ function CategoryMap({ category, categories, setCategories }) {
         <li>{product.name}</li>
     })
 
-    function onClick() {
+    function showProducts() {
         setShow(!show)
     }
 
@@ -21,7 +21,7 @@ function CategoryMap({ category, categories, setCategories }) {
         <div>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
-            <button>Show Products</button>
+            <button onClick={onClick}>Show Products</button>
             <br/>
             <br/>
         </div>
