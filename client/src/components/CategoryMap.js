@@ -21,7 +21,7 @@ function CategoryMap({ category, categories, setCategories }) {
         <div>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
-            <button onClick={onClick}>Show Products</button>
+            <button onClick={showProducts}>Show Products</button>
             <br/>
             <br/>
         </div>
