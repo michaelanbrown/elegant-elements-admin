@@ -12,7 +12,7 @@ function CategoryMap({ category, categories, setCategories }) {
     //each drop down item will direct you to the individual products page for that product
 
     const productDropDown = category.products.map(product => {
-        <li><Link className='navbarlink'>{product.name}</Link></li>
+        <li><Link className='navbarlink' to={`/products/${product.id}`}>{product.name}</Link></li>
     })
 
     function showProducts() {
