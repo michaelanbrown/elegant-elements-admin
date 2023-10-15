@@ -1,7 +1,7 @@
 import '../App.css'
 import React, { useContext } from "react";
 import { UserContext } from './context/User';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CategoryMap({ category, categories, setCategories }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
