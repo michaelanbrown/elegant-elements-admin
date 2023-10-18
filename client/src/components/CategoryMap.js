@@ -7,7 +7,6 @@ function CategoryMap({ category, categories, setCategories }) {
     const { currentUser, setCurrentUser } = useContext(UserContext);
     const [show, setShow] = useState(false)
 
-    //check drop down for products in category
     //each drop down item will direct you to the individual products page for that product
 
     const productDropDown = category.products.map(product => 
