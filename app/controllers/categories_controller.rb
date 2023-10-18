@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
 
     def index 
         render json: Category.all, status: :ok,
-        serializer: CategoriesSerializer
+        each_serializer: CategoriesSerializer
     end
 
     def show
