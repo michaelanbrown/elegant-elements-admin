@@ -24,7 +24,7 @@ function CategoryMap({ category, categories, setCategories }) {
             <p>{category.description}</p>
             <button onClick={showProducts}>{showWording}</button>
             {show ? productDropDown : null}
-            <br/>
+            {show ? null : <br/>}
             <br/>
         </div>
     )
