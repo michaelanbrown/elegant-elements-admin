@@ -15,7 +15,6 @@ function CategoryMap({ category, categories, setCategories }) {
     //     <li><Link className='navbarlink' to={`/products/${product.id}`}>{product.name}</Link></li>
     // })
 
-    console.log(categories)
 
     function showProducts() {
         setShow(!show)

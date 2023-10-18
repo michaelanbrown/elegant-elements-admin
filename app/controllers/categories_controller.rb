@@ -2,7 +2,8 @@ class CategoriesController < ApplicationController
     before_action :find_category, only: [:show, :update]
 
     def index 
-        render json: Category.all, status: :ok
+        render json: Category.all, status: :ok,
+        serializer: CategoriesSerializer
     end
 
     def show
