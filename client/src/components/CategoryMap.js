@@ -11,9 +11,11 @@ function CategoryMap({ category, categories, setCategories }) {
     //check drop down for products in category
     //each drop down item will direct you to the individual products page for that product
 
-    const productDropDown = category.products.map(product => {
-        <li><Link className='navbarlink' to={`/products/${product.id}`}>{product.name}</Link></li>
-    })
+    // const productDropDown = category.products.map(product => {
+    //     <li><Link className='navbarlink' to={`/products/${product.id}`}>{product.name}</Link></li>
+    // })
+
+    console.log(categories)
 
     function showProducts() {
         setShow(!show)
@@ -24,7 +26,7 @@ function CategoryMap({ category, categories, setCategories }) {
             <h3>{category.name}</h3>
             <p>{category.description}</p>
             <button onClick={showProducts}>Show Products</button>
-            {show ? productDropDown : null}
+            {/* {show ? productDropDown : null} */}
             <br/>
             <br/>
         </div>

@@ -10,7 +10,7 @@ function Categories({ categories, setCategories }) {
   const filteredCategories = categories.filter(category => category.name.toLowerCase().indexOf(categoryFiltering.toLowerCase()) > -1)
 
   const categoryMap = filteredCategories.sort((a, b) => a.name.localeCompare(b.name)).map(category => {
-    return <CategoryMap key={category.id} category={category}/>
+    return <CategoryMap key={category.id} category={category} categories={categories}/>
   })
 
 
