@@ -14,6 +14,7 @@ function CategoryMap({ category, categories, setCategories }) {
 
     function showProducts() {
         setShow(!show)
+        setShowWording("Hide Products")
     }
 
 
