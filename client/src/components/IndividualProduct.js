@@ -50,7 +50,8 @@ function IndividualProduct({ products, setProducts }) {
       setRemovalData(e.target.value);
     }
 
-    function inventoryRemoval() {
+    function inventoryRemoval(e) {
+      e.preventDefault()
       fetch(`/products/${id}`, {
         method: 'PATCH',
         headers: {
