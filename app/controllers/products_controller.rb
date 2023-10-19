@@ -3,7 +3,8 @@ class ProductsController < ApplicationController
     before_action :authorize_user_is_admin, only: [:destroy]
 
     def index 
-        render json: Product.all, status: :ok
+        render json: Product.all, status: :ok,
+        each_serializer: ProductsSerializer
     end
 
     def show
