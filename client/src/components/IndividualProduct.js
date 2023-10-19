@@ -67,7 +67,6 @@ function IndividualProduct({ products, setProducts }) {
       })
     }
 
-     //check handleremovalchange function, inventoryremoval function
 
     return (
         <div>
