@@ -63,6 +63,7 @@ function IndividualProduct({ products, setProducts }) {
       }).then(res => {
         if(res.ok) {
           res.json(setProduct({...product, quantity: product.quantity - removalData}))
+          setRemovalData(0)
         }
       })
     }
