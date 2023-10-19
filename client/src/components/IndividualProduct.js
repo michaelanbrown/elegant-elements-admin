@@ -31,7 +31,7 @@ function IndividualProduct({ products, setProducts }) {
       setAdditionData(e.target.value);
     }  
 
-    function inventoryAddition() {
+    function inventoryAddition(e) {
       e.preventDefault()
       fetch(`/products/${id}`, {
         method: 'PATCH',
