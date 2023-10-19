@@ -80,6 +80,8 @@ function IndividualProduct({ products, setProducts }) {
           Current Qty: {product.quantity}</p>
           <form onSubmit={inventoryAddition}>
             Add to Inventory: <input  type="text" name="additionData" value={additionData} onChange={handleAdditionChange} />
+            <br/>
+            <input type='submit' value='Add' />
           </form>
           <form onSubmit={inventoryRemoval}>
             Remove from Inventory: <input  type="text" name="removalData" value={removalData} onChange={handleRemovalChange} />
