@@ -50,7 +50,7 @@ function IndividualProduct({ products, setProducts }) {
 
 
     function handleRemovalChange(e) {
-      setRemovalData(e.target.value);
+      setRemovalData(Number(e.target.value));
     }
 
     function inventoryRemoval(e) {
