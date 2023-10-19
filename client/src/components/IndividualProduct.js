@@ -48,7 +48,6 @@ function IndividualProduct({ products, setProducts }) {
       })
     }
 
-    console.log(additionData)
 
     function handleRemovalChange(e) {
       setRemovalData(e.target.value);
