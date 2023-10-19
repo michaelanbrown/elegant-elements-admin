@@ -28,7 +28,7 @@ function IndividualProduct({ products, setProducts }) {
       }, [])
 
     function handleAdditionChange(e) {
-      setAdditionData(e.target.value);
+      setAdditionData(Number(e.target.value));
     }  
 
     function inventoryAddition(e) {
@@ -47,6 +47,8 @@ function IndividualProduct({ products, setProducts }) {
         }
       })
     }
+
+    console.log(additionData)
 
     function handleRemovalChange(e) {
       setRemovalData(e.target.value);
