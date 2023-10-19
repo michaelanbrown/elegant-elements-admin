@@ -32,6 +32,7 @@ function IndividualProduct({ products, setProducts }) {
     }  
 
     function inventoryAddition() {
+      e.preventDefault()
       fetch(`/products/${id}`, {
         method: 'PATCH',
         headers: {
