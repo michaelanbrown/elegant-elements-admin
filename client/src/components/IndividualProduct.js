@@ -83,6 +83,8 @@ function IndividualProduct({ products, setProducts }) {
           </form>
           <form onSubmit={inventoryRemoval}>
             Remove from Inventory: <input  type="text" name="removalData" value={removalData} onChange={handleRemovalChange} />
+            <br/>
+            <input type='submit' value='Remove' />
           </form>
         </div>
     )
