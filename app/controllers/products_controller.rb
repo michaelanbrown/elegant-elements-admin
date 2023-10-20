@@ -33,7 +33,6 @@ class ProductsController < ApplicationController
         params.permit(:category_id, :name, :status, :quantity, :price)
     end
 
-    ##create method for status to be updated based on quantity
 
     def update_product_params
         params.permit(:quantity)
