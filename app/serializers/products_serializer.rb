@@ -10,5 +10,6 @@ class ProductsSerializer < ActiveModel::Serializer
       return 'mid'
     else
       return 'full'
+    end
   end
 end
