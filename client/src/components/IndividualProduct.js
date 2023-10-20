@@ -11,6 +11,8 @@ function IndividualProduct({ products, setProducts }) {
     const [additionData, setAdditionData] = useState(0)
     const [removalData, setRemovalData] = useState(0)
     const { id } = useParams();
+
+    //need to fix products page state for status and qty, and individual product state for status
     
     useEffect(() => {
         fetch(`/products/${id}`)
