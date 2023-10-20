@@ -8,5 +8,7 @@ class ProductsSerializer < ActiveModel::Serializer
       return 'low'
     elsif (object.quantity >=25 && object.quantity < 50)
       return 'mid'
+    else
+      return 'full'
   end
 end
