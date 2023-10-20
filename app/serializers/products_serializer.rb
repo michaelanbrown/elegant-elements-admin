@@ -6,5 +6,7 @@ class ProductsSerializer < ActiveModel::Serializer
   def status
     if object.quantity < 25
       return 'low'
+    elsif (object.quantity >=25 && object.quantity < 50)
+      return 'mid'
   end
 end
