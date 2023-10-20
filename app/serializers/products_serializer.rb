@@ -4,5 +4,6 @@ class ProductsSerializer < ActiveModel::Serializer
   belongs_to :category
 
   def status
+    if object.quantity
   end
 end
