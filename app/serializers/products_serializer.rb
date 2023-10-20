@@ -4,6 +4,7 @@ class ProductsSerializer < ActiveModel::Serializer
   belongs_to :category
 
   def status
-    if object.quantity
+    if object.quantity < 25
+      return 'low'
   end
 end
