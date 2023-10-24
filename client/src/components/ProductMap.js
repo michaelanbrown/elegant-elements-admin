@@ -2,7 +2,7 @@ import React from "react";
 import '../App.css'
 import { Link } from "react-router-dom";
 
-function ProductMap({ prod, name, quantity, price, status }) {
+function ProductMap({ prod, name, quantity, price, status, products, setProducts }) {
 
   return (
     <div className="ProductCard">
