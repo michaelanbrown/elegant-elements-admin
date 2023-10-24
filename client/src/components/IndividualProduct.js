@@ -34,17 +34,6 @@ function IndividualProduct({ products, setProducts }) {
       setAdditionData(Number(e.target.value));
     }
 
-  //   function updateOrders(updatedOrder) {
-  //     const updatingOrders = orders.map((currentOrder) => {
-  //         if (currentOrder.id === orderId) {
-  //             return updatedOrder
-  //         } else {
-  //             return currentOrder
-  //         }
-  //     })
-  //     setOrders(updatingOrders)
-  // }
-
     function updateProduct(updatedProduct) {
       const updatingProduct = products.map(currentProduct => {
         if (currentProduct.id === product.id) {
@@ -55,6 +44,13 @@ function IndividualProduct({ products, setProducts }) {
       })
       setProducts(updatingProduct)
     }
+
+    // if(res.ok){
+    //   res.json()
+    //   .then(order => {
+    //     updateOrders(order)
+    //     checkout()
+        // })
 
     function inventoryAddition(e) {
       e.preventDefault()
@@ -67,7 +63,9 @@ function IndividualProduct({ products, setProducts }) {
         body: JSON.stringify({quantity: product.quantity + additionData})
       }).then(res => {
         if(res.ok) {
-          res.json(setProduct({...product, quantity: product.quantity + additionData}))
+          res.json().then(product => {
+            setProduct({...product, quantity: product.quantity + additionData})
+          })
           setAdditionData(0)
         }
       })
