@@ -58,7 +58,7 @@ function IndividualProduct({ products, setProducts }) {
       }).then(res => {
         if(res.ok) {
           res.json().then(product => {
-            setProduct({...product, quantity: product.quantity + additionData})
+            setProduct({...product, quantity: product.quantity})
             updateProduct(product)
           })
           setAdditionData(0)
