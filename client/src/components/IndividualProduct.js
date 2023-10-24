@@ -45,12 +45,6 @@ function IndividualProduct({ products, setProducts }) {
       setProducts(updatingProduct)
     }
 
-    // if(res.ok){
-    //   res.json()
-    //   .then(order => {
-    //     updateOrders(order)
-    //     checkout()
-        // })
 
     function inventoryAddition(e) {
       e.preventDefault()
@@ -65,6 +59,7 @@ function IndividualProduct({ products, setProducts }) {
         if(res.ok) {
           res.json().then(product => {
             setProduct({...product, quantity: product.quantity + additionData})
+            updateProduct(product)
           })
           setAdditionData(0)
         }
