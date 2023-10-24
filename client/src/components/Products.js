@@ -9,7 +9,7 @@ function Products({ products, setProducts }) {
   const filteredProducts = products.filter(product => product.name.toLowerCase().indexOf(productFiltering.toLowerCase()) > -1)
 
   const productMap = filteredProducts.sort((a, b) => a.name.localeCompare(b.name)).map(prod => {
-    return <ProductMap key={prod.id} prod={prod} name={prod.name} price={prod.price} quantity={prod.quantity} status={prod.status}/>
+    return <ProductMap key={prod.id} prod={prod} name={prod.name} price={prod.price} quantity={prod.quantity} status={prod.status} products={products} setProducts={setProducts}/>
   })
 
   function handleChange(e) {
