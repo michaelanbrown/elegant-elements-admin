@@ -11,8 +11,6 @@ function IndividualProduct({ products, setProducts }) {
     const [additionData, setAdditionData] = useState(0)
     const [removalData, setRemovalData] = useState(0)
     const { id } = useParams();
-
-    //create quick decrease button, create quick increase button
     
     useEffect(() => {
         fetch(`/products/${id}`)
