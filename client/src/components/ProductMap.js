@@ -13,7 +13,7 @@ function ProductMap({ prod, name, quantity, price, status }) {
       <br/>
       {price.toString()[price.toString().length-2] == "." ? `Price: $${price}0` : `Price: $${price}`}
       <br/>
-      <button>Quick Decrease</button>
+      <button className="quick">Quick Decrease</button>
       <br/>
       <Link className='navbarlink' to={`/products/${prod.id}`}>Order More Here</Link>
       </p>
