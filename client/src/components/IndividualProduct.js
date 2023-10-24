@@ -12,7 +12,7 @@ function IndividualProduct({ products, setProducts }) {
     const [removalData, setRemovalData] = useState(0)
     const { id } = useParams();
 
-    //need to fix products page state for status and qty, and individual product state for status
+    //need to fix products page state for status and qty, and individual product state for status --> inventoryaddition done, need to do inventoryremoval
     //create quick decrease button
     
     useEffect(() => {
