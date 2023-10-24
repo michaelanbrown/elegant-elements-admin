@@ -13,6 +13,7 @@ function IndividualProduct({ products, setProducts }) {
     const { id } = useParams();
 
     //need to fix products page state for status and qty, and individual product state for status
+    //create quick decrease button
     
     useEffect(() => {
         fetch(`/products/${id}`)
