@@ -47,11 +47,13 @@ function IndividualProduct({ products, setProducts }) {
 
     function updateProduct(updatedProduct) {
       const updatingProduct = products.map(currentProduct => {
-        if (currentProduct.id === updatedProduct.id) {
+        if (currentProduct.id === product.id) {
+          return updatedProduct
+        } else {
           return currentProduct
         }
-        setProducts(updatingProduct)
       })
+      setProducts(updatingProduct)
     }
 
     function inventoryAddition(e) {
