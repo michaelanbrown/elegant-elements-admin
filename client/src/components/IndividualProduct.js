@@ -34,27 +34,23 @@ function IndividualProduct({ products, setProducts }) {
       setAdditionData(Number(e.target.value));
     }
 
-  //   function updateAddresses(updatedAddress) {
-  //     const updatingCustAddress = custAddresses.map((currentAddress) => {
-  //         if (currentAddress.id === address.id) {
-  //             return updatedAddress
+  //   function updateOrders(updatedOrder) {
+  //     const updatingOrders = orders.map((currentOrder) => {
+  //         if (currentOrder.id === orderId) {
+  //             return updatedOrder
   //         } else {
-  //             return currentAddress
+  //             return currentOrder
   //         }
   //     })
-  //     setCustAddresses(updatingCustAddress)
-  //     setActive(!active)
-  //     const updatingAddress = addresses.filter((addie) => {
-  //         if (addie.id !== address.id) {
-  //             return address
-  //         }
-  //     })
-  //     setAddresses(updatingAddress)
+  //     setOrders(updatingOrders)
   // }
 
-    function updateProductQtyAddition() {
+    function updateProduct(updatedProduct) {
       const updatingProduct = products.map(currentProduct => {
-        
+        if (currentProduct.id === updatedProduct.id) {
+          return currentProduct
+        }
+        setProducts(updatingProduct)
       })
     }
 
