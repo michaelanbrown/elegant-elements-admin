@@ -54,16 +54,18 @@ function IndividualProduct({ products, setProducts }) {
           "Content-Type" : "application/json",
           "Accept" : "application/json"
         },
-        body: JSON.stringify({quantity: product.quantity + additionData})
+        body: JSON.stringify({quantity: (product.quantity + additionData)})
       }).then(res => {
         if(res.ok) {
-          res.json().then(product => {
-            setProduct({...product, quantity: product.quantity})
+          res.json()
+          .then(product => {
+            console.log(product)
+            // updateProducts(product)
+            // setProduct(product)
           })
           setAdditionData(0)
         }
       })
-      updateProducts(product)
     }
 
     function handleRemovalChange(e) {

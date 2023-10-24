@@ -19,7 +19,8 @@ class ProductsController < ApplicationController
 
     def update
         @product.update!(update_product_params)
-        render json: @product, status: :accepted
+        render json: @product, status: :accepted,
+        serializer: ProductsSerializer
     end
 
     def destroy
