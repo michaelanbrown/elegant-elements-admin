@@ -34,7 +34,7 @@ function IndividualProduct({ products, setProducts }) {
       setAdditionData(Number(e.target.value));
     }
 
-    function updateProduct(updatedProduct) {
+    function updateProducts(updatedProduct) {
       const updatingProduct = products.map(currentProduct => {
         if (currentProduct.id === product.id) {
           return updatedProduct
@@ -59,13 +59,12 @@ function IndividualProduct({ products, setProducts }) {
         if(res.ok) {
           res.json().then(product => {
             setProduct({...product, quantity: product.quantity})
-            updateProduct(product)
           })
           setAdditionData(0)
         }
       })
+      updateProducts(product)
     }
-
 
     function handleRemovalChange(e) {
       setRemovalData(Number(e.target.value));
