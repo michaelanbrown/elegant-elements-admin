@@ -53,7 +53,9 @@ function IndividualProduct({ products, setProducts }) {
   // }
 
     function updateProductQtyAddition() {
-      
+      const updatingProduct = products.map(currentProduct => {
+        
+      })
     }
 
     function inventoryAddition(e) {
