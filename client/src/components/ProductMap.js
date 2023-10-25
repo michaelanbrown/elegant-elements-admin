@@ -6,7 +6,10 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
 
   function quickDecrease(e) {
     e.preventDefault()
+    fetch(`products/${prod.id}`)
   }
+
+
 
   return (
     <div className="ProductCard">
