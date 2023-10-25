@@ -6,7 +6,13 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
 
   function quickDecrease(e) {
     e.preventDefault()
-    fetch(`products/${prod.id}`)
+    fetch(`products/${prod.id}`, {
+      method: 'PATCH',
+      headers: {
+        "Content-Type" : "application/json",
+        "Accept" : "application/json"
+      }
+    })
   }
 
 
