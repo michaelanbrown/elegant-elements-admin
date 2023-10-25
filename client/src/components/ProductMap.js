@@ -11,10 +11,10 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
       headers: {
         "Content-Type" : "application/json",
         "Accept" : "application/json"
-      }
+      },
+      body: JSON.stringify({quantity: (quantity - 1)})
     })
   }
-
 
 
   return (
