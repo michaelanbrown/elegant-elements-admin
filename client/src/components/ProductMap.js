@@ -6,7 +6,7 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
 
   function updateProducts(updatedProduct) {
     const updatingProduct = products.map(currentProduct => {
-      if (currentProduct.id === product.id) {
+      if (currentProduct.id === prod.id) {
         return updatedProduct
       } else {
         return currentProduct
