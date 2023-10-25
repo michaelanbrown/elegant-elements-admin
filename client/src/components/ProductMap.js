@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ProductMap({ prod, name, quantity, price, status, products, setProducts }) {
 
-  //create quick decrease function for button
+  
 
   return (
     <div className="ProductCard">
