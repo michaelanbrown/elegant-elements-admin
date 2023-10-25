@@ -27,11 +27,10 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
     }).then (res => {
       res.json()
       .then(product => {
-
+        updateProducts(product)
       })
     })
   }
-
 
 
   return (
