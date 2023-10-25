@@ -44,7 +44,7 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
       <br/>
       <Link className='navbarlink' to={`/products/${prod.id}`}>Order More Here</Link>
       <br/>
-      <button className="quick">Quick Decrease</button>
+      <button className="quick" onClick={quickDecrease}>Quick Decrease</button>
       </p>
       <br/>
     </div>
