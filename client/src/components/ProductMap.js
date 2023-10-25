@@ -13,8 +13,14 @@ function ProductMap({ prod, name, quantity, price, status, products, setProducts
         "Accept" : "application/json"
       },
       body: JSON.stringify({quantity: (quantity - 1)})
+    }).then (res => {
+      res.json()
+      .then(product => {
+
+      })
     })
   }
+
 
 
   return (
