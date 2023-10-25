@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 function ProductMap({ prod, name, quantity, price, status, products, setProducts }) {
 
-  function quickDecrease() {
-    
+  function quickDecrease(e) {
+    e.preventDefault()
   }
 
   return (
