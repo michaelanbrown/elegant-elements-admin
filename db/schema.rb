@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_02_234222) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_28_023405) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_234222) do
     t.string "name"
     t.string "title"
     t.string "email"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
