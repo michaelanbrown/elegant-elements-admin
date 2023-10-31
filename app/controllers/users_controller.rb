@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     end
 
     def show
+        if current_user.admin
+            render json: @user, status: :ok
         render json: current_user, status: :ok
     end
 
