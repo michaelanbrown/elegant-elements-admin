@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authenticate_user, only: [:index, :create]
+    skip_before_action :authenticate_user, only: [:index, :create, :show]
     before_action :find_user, only: [:show, :update]
     before_action :authorize_user_is_admin, only: [:update]
 
@@ -8,11 +8,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        if current_user.admin
-            render json: @user, status: :ok
-        else
-            render json: current_user, status: :ok
-        end
+        render json: current_user, status: :ok
     end
 
     def create
