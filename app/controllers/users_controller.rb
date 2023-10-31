@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     skip_before_action :authenticate_user, only: [:index, :create]
+    before_action :find_user, only: [:update]
     before_action :authorize_user_is_admin, only: [:update]
 
     def index 
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
     end
 
     def update
-        
+
     end
 
     private 
