@@ -10,7 +10,8 @@ class UsersController < ApplicationController
     def show
         if current_user.admin
             render json: @user, status: :ok
-        render json: current_user, status: :ok
+        else
+            render json: current_user, status: :ok
         end
     end
 
