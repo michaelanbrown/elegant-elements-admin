@@ -1,7 +1,7 @@
 import '../App.css'
 import React from "react";
 
-function Users ({})  {
+function Users ({ users, setUsers })  {
 
 
     return (
