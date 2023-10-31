@@ -11,6 +11,7 @@ class UsersController < ApplicationController
         if current_user.admin
             render json: @user, status: :ok
         render json: current_user, status: :ok
+        end
     end
 
     def create
