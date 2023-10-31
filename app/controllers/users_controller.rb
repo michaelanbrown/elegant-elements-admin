@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     end
 
     def update
-
+        @user.update!(update_user_params)
     end
 
     private 
