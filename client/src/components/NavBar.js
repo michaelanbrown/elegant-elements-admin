@@ -23,6 +23,8 @@ export default function NavBar ({})  {
           <br/>
           <NavLink className='navbarlink' to="/">Welcome</NavLink>
           <br/>
+          <NavLink className='navbarlink' to="/users">Users</NavLink>
+          <br/>
           <NavLink className='navbarlink' to="/categories">Categories</NavLink>
           <br/>
           <NavLink className='navbarlink' to="/products">Products</NavLink>
