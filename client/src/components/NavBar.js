@@ -24,7 +24,7 @@ export default function NavBar ({})  {
           <NavLink className='navbarlink' to="/">Welcome</NavLink>
           <br/>
           {currentUser.admin ? <NavLink className='navbarlink' to="/users">Users</NavLink> : null }
-          <br/>
+          {currentUser.admin ? <br/> : null }
           <NavLink className='navbarlink' to="/categories">Categories</NavLink>
           <br/>
           <NavLink className='navbarlink' to="/products">Products</NavLink>
