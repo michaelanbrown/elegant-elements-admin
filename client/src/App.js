@@ -61,6 +61,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
+          <Route path="/users" element={}></Route>
           <Route path="/login" element={<Login getCategories={getCategories} getProducts={getProducts}/>} />
           <Route path="/signup" element={<Signup users={users} setUsers={setUsers} getCategories={getCategories} getProducts={getProducts}/>} />
           <Route path="/categories" element={<Categories categories={categories} setCategories={setCategories}/>} />
