@@ -20,6 +20,10 @@ class ApplicationController < ActionController::API
         @category = Category.find(params[:id])
     end
 
+    def find_user
+        
+    end
+
     def authenticate_user
         render json: { errors: "Not authorized" }, status: :unauthorized unless current_user
     end
