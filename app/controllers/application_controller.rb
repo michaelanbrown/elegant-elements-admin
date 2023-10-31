@@ -21,7 +21,7 @@ class ApplicationController < ActionController::API
     end
 
     def find_user
-        
+        @user = User.find(params[:id])
     end
 
     def authenticate_user
