@@ -9,6 +9,7 @@ import Signup from "./components/SignUp";
 import Categories from "./components/Categories";
 import Products from "./components/Products";
 import IndividualProduct from "./components/IndividualProduct";
+import Users from "./components/Users";
 
 function App() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
