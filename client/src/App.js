@@ -61,6 +61,8 @@ function App() {
     .then((res) => {
       if(res.ok){
         res.json().then(setUsers)
+      } else {
+        res.json().then(json => setErrors([json.error]))
       }
     })
   }
