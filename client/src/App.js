@@ -57,7 +57,10 @@ function App() {
   }
 
   function getUsers() {
-    
+    fetch("/users")
+    .then((res) => {
+     
+    })
   }
 
   return (
