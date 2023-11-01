@@ -31,6 +31,7 @@ function Login({ getCategories, getProducts, getUsers }) {
                     setCurrentUser(user)
                     getCategories()
                     getProducts()
+                    getUsers()
                     navigate(`/`)
                 })
             } else {
