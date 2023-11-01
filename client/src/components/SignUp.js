@@ -35,6 +35,7 @@ function Signup({ users, setUsers, getCategories, getProducts, getUsers }) {
                     setUsers([...users, user])
                     getCategories()
                     getProducts()
+                    getUsers()
                     navigate(`/`)
                 })
             } else {
