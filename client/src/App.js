@@ -59,7 +59,9 @@ function App() {
   function getUsers() {
     fetch("/users")
     .then((res) => {
-     
+      if(res.ok){
+        res.json().then(setUsers)
+      }
     })
   }
 
