@@ -27,6 +27,7 @@ function App() {
           setCurrentUser(user)
           getCategories()
           getProducts()
+          getUsers()
         })
       } else {
         res.json().then(json => setErrors([json.error]))
