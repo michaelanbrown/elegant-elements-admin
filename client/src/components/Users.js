@@ -1,5 +1,6 @@
 import '../App.css'
 import React from "react";
+import UserMap from './UserMap';
 
 function Users ({ users, setUsers })  {
 
