@@ -4,8 +4,9 @@ import UserMap from './UserMap';
 
 function Users ({ users, setUsers })  {
 
+
     const userMap = users.map(user => {
-        <UserMap user={user}/>
+        <UserMap key={user.id} user={user}/>
     })
 
     return (
