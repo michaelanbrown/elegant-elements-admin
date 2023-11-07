@@ -10,6 +10,7 @@ function Users ({ users, setUsers })  {
 
     return (
         <div>
+            <br/>
             {userMap}
         </div>
     )
