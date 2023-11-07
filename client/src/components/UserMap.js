@@ -2,7 +2,7 @@ import '../App.css'
 import React, { useState } from "react";
 
 function UserMap ({ user })  {
-
+const [edit, setEdit] = useState(false)
 // admins can change a user's title and admin boolean
 
 
