@@ -4,7 +4,7 @@ import React from "react";
 function UserMap ({ user })  {
 
 // admins can change a user's title and admin boolean
-console.log(user.admin)
+
     return (
         <div>
             <h3 className='wayLessSpace'>{user.name}</h3>
