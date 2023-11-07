@@ -7,8 +7,8 @@ function UserMap ({ user })  {
 console.log(user)
     return (
         <div>
-            <h3>{user.name}</h3>
-            <p>{user.title}</p>
+            <h3 className='wayLessSpace'>{user.name}</h3>
+            <p className='wayLessSpace'>{user.title}</p>
         </div>
     )
 }

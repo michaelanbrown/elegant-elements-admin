@@ -95,6 +95,9 @@ padding: 0px; }
   margin-top: 5%;
 }
 
+.wayLessSpace {
+  margin: 0px }
+
 .quick{
   font-size: 80%;
 }
