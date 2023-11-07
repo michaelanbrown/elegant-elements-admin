@@ -99,7 +99,8 @@ padding: 0px; }
   margin: 0px }
 
 .nameHeader {
-  
+  text-align : center;
+  margin-right : 32px;
 }
 
 .quick{
@@ -107,8 +108,8 @@ padding: 0px; }
 }
 
 .userEdit { 
-  font-size: 70%;
-  margin-left: 0;
-  margin-right: 0;
+  font-size: 60%;
   font-weight: bold;
+  position: absolute;
+  right: 40%
 }
