@@ -7,7 +7,7 @@ function UserMap ({ user })  {
 
     return (
         <div>
-            <h3 className='wayLessSpace'>{user.name}</h3>
+            <h3 className='wayLessSpace'>{user.name}{" "}<button>Edit✏️</button></h3>
             <p className='wayLessSpace'>{user.title}</p>
             <p className='wayLessSpace'>{user.email}</p>
             {user.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
