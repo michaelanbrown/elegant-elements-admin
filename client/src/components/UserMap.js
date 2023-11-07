@@ -4,12 +4,13 @@ import React from "react";
 function UserMap ({ user })  {
 
 // admins can change a user's title and admin boolean
-console.log(user)
+console.log(user.admin)
     return (
         <div>
             <h3 className='wayLessSpace'>{user.name}</h3>
             <p className='wayLessSpace'>{user.title}</p>
             <p className='wayLessSpace'>{user.email}</p>
+            {user.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
         </div>
     )
 }
