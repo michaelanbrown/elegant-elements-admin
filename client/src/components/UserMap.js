@@ -9,6 +9,7 @@ console.log(user)
         <div>
             <h3 className='wayLessSpace'>{user.name}</h3>
             <p className='wayLessSpace'>{user.title}</p>
+            <p className='wayLessSpace'>{user.email}</p>
         </div>
     )
 }
