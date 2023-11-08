@@ -18,6 +18,11 @@ function onEdit() {
                 <br/>
                 <br/>
             </div> : null }
+            {edit ? <div>
+
+                <br/>
+                <br/>
+            </div> : null }
         </div>
     )
 }
