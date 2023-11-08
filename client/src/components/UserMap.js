@@ -31,7 +31,7 @@ function handleChange(e) {
                 <br/>
             </div> : null }
             {edit ? <form>
-                            <h3>Name: <input className="nameFormField" type='text' name='name' value={formData.name} onChange={handleChange} /><button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
+                            <h3>Name: <input className="nameFormField" type='text' name='name' value={formData.name} onChange={handleChange} /></h3>
                             <p className='wayLessSpace'>Email: {user.email}</p>
                             Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
                             <br/>
