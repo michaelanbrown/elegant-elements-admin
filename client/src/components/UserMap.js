@@ -4,9 +4,9 @@ import React, { useState } from "react";
 function UserMap ({ user })  {
 const [edit, setEdit] = useState(false)
 const [formData, setFormData] = useState({
-    name:'',
-    title: '',
-    admin
+    name: user.name,
+    title: user.title,
+    admin : user.admin
 })
 // admins can change a user's title and admin boolean
 function onEdit() {
