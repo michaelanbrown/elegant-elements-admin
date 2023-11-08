@@ -9,6 +9,7 @@ const [formData, setFormData] = useState({
     admin : user.admin
 })
 // admins can change a user's title and admin boolean
+// if admin is true then checkbox needs to be pressed
 function onEdit() {
     setEdit(!edit)
 }
