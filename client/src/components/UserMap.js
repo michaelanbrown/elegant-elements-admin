@@ -35,7 +35,10 @@ function handleChange(e) {
                             <p className='wayLessSpace'>Email: {user.email}</p>
                             Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
                             <br/>
-                            Admin Status: <input className="checkbox" type='checkbox' name='admin' value={formData.admin} onChange={handleChange} />
+                            Admin Status: <input     style={{
+                                width: 20,
+                                height: 20
+                                }}className="checkbox" type='checkbox' name='admin' value={formData.admin} onChange={handleChange} />
                             <br/>
                             <button onClick={onEdit}>Complete ✔️</button>
                 <br/>
