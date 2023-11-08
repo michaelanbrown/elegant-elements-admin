@@ -36,6 +36,8 @@ function handleChange(e) {
                             Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
                             <br/>
                             Admin Status: <input className="formFields" type='text' name='admin' value={formData.admin} onChange={handleChange} />
+                            <br/>
+                            <button>Complete ✔️</button>
                 <br/>
                 <br/>
             </form> : null }
