@@ -32,10 +32,9 @@ function handleChange(e) {
             </div> : null }
             {edit ? <div>
                         <form>
-                            <h3 className='wayLessSpace'>{user.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
-                            <input className="formFields" type='text' name='name' value={formData.name} onChange={handleChange} />
+                            <h3><input className="formFields" type='text' name='name' value={formData.name} onChange={handleChange} /><button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
                             <br/>
-                            <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
+                            Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
                             <br/>
                             <input className="formFields" type='text' name='admin' value={formData.admin} onChange={handleChange} />
                         </form>
