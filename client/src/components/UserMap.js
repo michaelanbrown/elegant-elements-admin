@@ -34,6 +34,7 @@ function handleChange(e) {
                         <form>
                             <input className="formFields" type='text' name='name' value={formData.name} onChange={handleChange} />
                             <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
+                            <input className="formFields" type='text' name='admin' value={formData.admin} onChange={handleChange} />
                         </form>
                 <br/>
                 <br/>
