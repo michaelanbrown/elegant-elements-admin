@@ -32,7 +32,7 @@ function handleChange(e) {
             </div> : null }
             {edit ? <div>
                         <form>
-                            <input className="formFields" type='text' name='name' value={formData.name} onChange={} />
+                            <input className="formFields" type='text' name='name' value={formData.name} onChange={handleChange} />
                         </form>
                 <br/>
                 <br/>
