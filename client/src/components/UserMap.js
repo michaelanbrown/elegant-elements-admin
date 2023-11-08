@@ -37,7 +37,7 @@ function handleChange(e) {
                             <br/>
                             Admin Status: <input className="formFields" type='text' name='admin' value={formData.admin} onChange={handleChange} />
                             <br/>
-                            <button>Complete ✔️</button>
+                            <button onClick={onEdit}>Complete ✔️</button>
                 <br/>
                 <br/>
             </form> : null }
