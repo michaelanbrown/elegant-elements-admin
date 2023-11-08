@@ -25,7 +25,7 @@ function onEdit() {
             </div> : null }
             {edit ? <div>
                         <form>
-                            <input className="formFields" type='text' name='name' value={user.name} onChange={} />
+                            <input className="formFields" type='text' name='name' value={formData.name} onChange={} />
                         </form>
                 <br/>
                 <br/>
