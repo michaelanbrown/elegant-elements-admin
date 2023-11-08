@@ -13,6 +13,13 @@ function onEdit() {
     setEdit(!edit)
 }
 
+function handleChange(e) {
+    setFormData({
+        ...formData,
+        [e.target.name] : e.target.value
+    });
+}
+
     return (
         <div>
             {!edit ? <div>
