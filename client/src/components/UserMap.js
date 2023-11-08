@@ -3,6 +3,13 @@ import React, { useState } from "react";
 
 function UserMap ({ user })  {
 const [edit, setEdit] = useState(false)
+const [formData, setFormData] = useState({
+    name:'',
+    email:'',
+    password:'',
+    title: '',
+    admin
+})
 // admins can change a user's title and admin boolean
 function onEdit() {
     setEdit(!edit)
