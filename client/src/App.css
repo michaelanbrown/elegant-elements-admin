@@ -96,7 +96,8 @@ padding: 0px; }
 }
 
 .wayLessSpace {
-  margin: 0px }
+  margin: 0px
+}
 
 .nameHeader {
   text-align : center;
@@ -111,5 +112,10 @@ padding: 0px; }
   font-size: 60%;
   font-weight: bold;
   position: absolute;
-  right: 40%;
+  right: 33%;
+}
+
+.nameFormField {
+  font-size: 75%;
+  margin: 0px
 }
