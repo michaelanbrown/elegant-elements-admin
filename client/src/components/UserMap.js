@@ -22,7 +22,7 @@ function handleChange(e) {
 }
 
 function handleChecked(e) {
-    
+
 }
 
     return (
@@ -43,7 +43,7 @@ function handleChecked(e) {
                             Admin Status: <input     style={{
                                 width: 20,
                                 height: 20
-                                }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChange} />
+                                }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChecked} />
                             <br/>
                             <button onClick={onEdit}>Complete ✔️</button>
                 <br/>
