@@ -6,7 +6,7 @@ const [edit, setEdit] = useState(false)
 const [formData, setFormData] = useState({
     name: user.name,
     title: user.title,
-    admin : user.admin
+    admin: user.admin
 })
 // admins can change a user's title and admin boolean
 // if admin is true then checkbox needs to be pressed
@@ -39,7 +39,7 @@ function handleChange(e) {
                             Admin Status: <input     style={{
                                 width: 20,
                                 height: 20
-                                }}className="checkbox" type='checkbox' name='admin' value={formData.admin} onChange={handleChange} />
+                                }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChange} />
                             <br/>
                             <button onClick={onEdit}>Complete ✔️</button>
                 <br/>
