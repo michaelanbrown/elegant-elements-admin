@@ -21,6 +21,10 @@ function handleChange(e) {
     });
 }
 
+function handleChecked(e) {
+    
+}
+
     return (
         <div>
             {!edit ? <div>
