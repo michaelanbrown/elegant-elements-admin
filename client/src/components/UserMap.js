@@ -22,7 +22,10 @@ function handleChange(e) {
 }
 
 function handleChecked(e) {
-
+    setFormData({
+        ...formData,
+        [e.target.name] : !formData.admin
+    });
 }
 
     return (
