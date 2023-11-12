@@ -9,7 +9,6 @@ const [formData, setFormData] = useState({
     title: user.title,
     admin: user.admin
 })
-// admins can change a user's title and admin boolean
 
 function onEdit() {
     setEdit(!edit)
