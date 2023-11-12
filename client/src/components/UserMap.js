@@ -28,9 +28,10 @@ function handleChecked(e) {
     });
 }
 
-function updateUser() {
-
+function updateUser(e) {
+    e.preventDefault()
 }
+
 
     return (
         <div>
