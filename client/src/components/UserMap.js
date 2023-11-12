@@ -56,6 +56,7 @@ function updateUser(e) {
             res.json().then(json => setErrors(json.errors))
         }
     })
+    setEdit(!edit)
 }
 
     return (
