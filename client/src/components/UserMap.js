@@ -30,7 +30,13 @@ function handleChecked(e) {
 
 function updateUser(e) {
     e.preventDefault()
-    fetch(`users/${user.id}`)
+    fetch(`users/${user.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type" : "application/json",
+            "Accept" : "application/json"
+        }
+    })
 }
 
 
