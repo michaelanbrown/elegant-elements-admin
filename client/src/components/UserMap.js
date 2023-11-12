@@ -78,7 +78,7 @@ function updateUser(e) {
                                 height: 20
                                 }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChecked} />
                             <br/>
-                            <button onClick={onEdit}>Complete ✔️</button>
+                            <button>Complete ✔️</button>
                 <br/>
                 <br/>
             </form> : null }
