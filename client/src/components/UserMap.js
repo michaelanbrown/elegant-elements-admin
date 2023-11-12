@@ -29,7 +29,7 @@ function handleChecked(e) {
 }
 
 function updateUserInfo() {
-    
+
 }
 
 function updateUser(e) {
@@ -44,10 +44,11 @@ function updateUser(e) {
     }).then (res => {
         if(res.ok) {
             res.json(updateUserInfo(formData))
+        } else {
+            res.json().then(json => setErrors(json.errors))
         }
     })
 }
-
 
     return (
         <div>
