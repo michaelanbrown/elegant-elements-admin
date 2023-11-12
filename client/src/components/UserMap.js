@@ -37,24 +37,8 @@ function updateUserInfo(updatedUser) {
             return currentUser
         }
     })
+    setUsers(updatingUser)
 }
-// function updateAddresses(updatedAddress) {
-//     const updatingCustAddress = custAddresses.map((currentAddress) => {
-//         if (currentAddress.id === address.id) {
-//             return updatedAddress
-//         } else {
-//             return currentAddress
-//         }
-//     })
-//     setCustAddresses(updatingCustAddress)
-//     setActive(!active)
-//     const updatingAddress = addresses.filter((addie) => {
-//         if (addie.id !== address.id) {
-//             return address
-//         }
-//     })
-//     setAddresses(updatingAddress)
-// }
 
 function updateUser(e) {
     e.preventDefault()
