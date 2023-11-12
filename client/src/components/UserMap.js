@@ -37,6 +37,10 @@ function updateUser(e) {
             "Accept" : "application/json"
         },
         body: JSON.stringify(formData)
+    }).then (res => {
+        if(res.ok) {
+            res.json(updateUserInfo(formData))
+        }
     })
 }
 
