@@ -29,9 +29,12 @@ function handleChecked(e) {
     });
 }
 
-function updateUserInfo() {
+function updateUserInfo(updatedUser) {
+    const updatingUser = users.map(currentUser => {
 
+    })
 }
+
 
 function updateUser(e) {
     e.preventDefault()
