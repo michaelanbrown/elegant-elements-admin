@@ -28,6 +28,10 @@ function handleChecked(e) {
     });
 }
 
+function updateUser() {
+
+}
+
     return (
         <div>
             {!edit ? <div>
