@@ -1,7 +1,7 @@
 import '../App.css'
 import React, { useState } from "react";
 
-function UserMap ({ user, users })  {
+function UserMap ({ user, users, setUsers })  {
 const [edit, setEdit] = useState(false)
 const [errors, setErrors] = useState([])
 const [formData, setFormData] = useState({
