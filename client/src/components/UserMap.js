@@ -68,7 +68,7 @@ function updateUser(e) {
                 <br/>
                 <br/>
             </div> : null }
-            {edit ? <form>
+            {edit ? <form onSubmit={updateUser}>
                             <h3>Name: <input className="nameFormField" type='text' name='name' value={formData.name} onChange={handleChange} /></h3>
                             <p className='wayLessSpace'>Email: {user.email}</p>
                             Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
