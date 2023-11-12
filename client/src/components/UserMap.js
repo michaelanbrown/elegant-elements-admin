@@ -28,6 +28,10 @@ function handleChecked(e) {
     });
 }
 
+function updateUserInfo() {
+    
+}
+
 function updateUser(e) {
     e.preventDefault()
     fetch(`users/${user.id}`, {
