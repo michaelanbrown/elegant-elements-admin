@@ -5,7 +5,7 @@ import UserMap from './UserMap';
 function Users ({ users, setUsers })  {
 
     const userMap = users.map(user => {
-        return <UserMap key={user.id} user={user} users={users}/>
+        return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
 
     return (
