@@ -11,6 +11,7 @@ function Users ({ users, setUsers })  {
     return (
         <div>
             <br/>
+            <NavLink className='navbarlink' to="/signup">Sign Up</NavLink>
             {userMap}
         </div>
     )
