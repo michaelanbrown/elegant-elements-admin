@@ -13,7 +13,8 @@ Thank you for being a valued member of our team!
 
 ### Models
 
-I have incldued five models:
+I have included five models:
 1. Category
 2. Product
 3. User
+
