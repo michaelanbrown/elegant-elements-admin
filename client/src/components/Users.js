@@ -13,6 +13,9 @@ function Users ({ users, setUsers })  {
         <div>
             <br/>
             <NavLink className='navbarlink' to="/signup">Sign Up</NavLink>
+            <br/>
+            <br/>
+            <br/>
             {userMap}
         </div>
     )
