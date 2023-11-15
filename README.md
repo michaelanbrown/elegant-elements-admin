@@ -20,3 +20,4 @@ I have included five models:
 
 Each product belongs to a category, and each category can have multiple products.
 Users have the abilities to add or remove products from the ivnentory as orders are fulfilled.
+Some users can be an admin, and admins have the capabilities to edit another user's account information.
