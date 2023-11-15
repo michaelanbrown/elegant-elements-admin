@@ -19,3 +19,4 @@ I have included five models:
 3. User
 
 Each product belongs to a category, and each category can have multiple products.
+Users have the abilities to add or remove products from the ivnentory as orders are fulfilled.
