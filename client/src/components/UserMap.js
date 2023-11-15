@@ -11,7 +11,7 @@ const [formData, setFormData] = useState({
 })
 
 // allow admin to deactivate user
-// only allow admins to create accounts, remove signup feature
+// only allow admins to create accounts, remove signup feature from home page and put in users page
 
 function onEdit() {
     setEdit(!edit)
