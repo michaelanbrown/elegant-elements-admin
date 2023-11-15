@@ -10,3 +10,10 @@ The pieces of jewelry behind Elegant Elements are meant to contain postiive word
 Once the idea came to life, Michaela decided to expand to all words, phrases, etc. that her clients wanted to put on the jewelry, but she will always hope and strive for positivity and a happy head space for her clients.
 
 Thank you for being a valued member of our team!
+
+### Models
+
+I have incldued five models:
+1. Category
+2. Product
+3. User
