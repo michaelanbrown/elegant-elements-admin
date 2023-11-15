@@ -18,3 +18,4 @@ I have included five models:
 2. Product
 3. User
 
+Each product belongs to a category, and each category can have multiple products.
