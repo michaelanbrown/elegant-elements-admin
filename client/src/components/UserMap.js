@@ -10,7 +10,7 @@ const [formData, setFormData] = useState({
     admin: user.admin
 })
 
-// allow admin to deactivate user
+// allow admin to deactivate user - add front end and ability to update on backend
 
 function onEdit() {
     setEdit(!edit)
