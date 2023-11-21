@@ -25,7 +25,8 @@ function Signup({ users, setUsers, getCategories, getProducts }) {
         }
         fetch(`/users`,{
           method:'POST',
-          headers:{'Content-Type': 'application/json'},
+          headers:{"Content-Type': 'application/json",
+                    "Accept" : "application/json"},
           body:JSON.stringify(newUser)
         })
         .then(res => {
