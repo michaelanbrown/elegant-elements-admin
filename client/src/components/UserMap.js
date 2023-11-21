@@ -13,7 +13,7 @@ const [formData, setFormData] = useState({
 
 const [activation, setActivation] = useState(user.active)
 
-// allow admin to deactivate user - add front end and ability to update on backend
+// filter for only active users and then push deactivated users to different section
 
 function onEdit() {
     setEdit(!edit)
