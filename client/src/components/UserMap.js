@@ -75,8 +75,8 @@ function onActivation(e) {
     }).then (res => {
         if(res.ok) {
             res.json().then(userUpdated => {
-                console.log(userUpdated)
                 updateUserInfo(userUpdated)
+                setActivation(!activation)
             })
         } else {
             res.json().then(json => setErrors(json.errors))
