@@ -77,7 +77,7 @@ function onActivation(e) {
         }
     })
 }
-
+console.log(user.active)
     return (
         <div>
             {!edit ? <div>
