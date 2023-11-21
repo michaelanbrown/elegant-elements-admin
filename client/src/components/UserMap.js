@@ -60,8 +60,8 @@ function updateUser(e) {
     setEdit(!edit)
 }
 
-function onActivation() {
-
+function onActivation(e) {
+    e.preventDefault()
 }
 
     return (
