@@ -9,7 +9,6 @@ const [formData, setFormData] = useState({
     title: user.title,
     admin: user.admin
 })
-const [activationStatus, setActivationStatus] = useState(user.active)
 
 // allow admin to deactivate user - add front end and ability to update on backend
 
