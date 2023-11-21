@@ -7,7 +7,8 @@ const [errors, setErrors] = useState([])
 const [formData, setFormData] = useState({
     name: user.name,
     title: user.title,
-    admin: user.admin
+    admin: user.admin,
+    active: user.active
 })
 
 // allow admin to deactivate user - add front end and ability to update on backend
