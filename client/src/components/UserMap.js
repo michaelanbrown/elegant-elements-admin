@@ -60,6 +60,10 @@ function updateUser(e) {
     setEdit(!edit)
 }
 
+function onActivation() {
+    
+}
+
     return (
         <div>
             {!edit ? <div>
