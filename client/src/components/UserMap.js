@@ -62,6 +62,14 @@ function updateUser(e) {
 
 function onActivation(e) {
     e.preventDefault()
+    fetch(`users/${user.id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type" : "application/json",
+            "Accept" : "application/json"
+        },
+        body: JSON.stringify()
+    })
 }
 
     return (
