@@ -71,7 +71,7 @@ function onActivation(e) {
             "Content-Type" : "application/json",
             "Accept" : "application/json"
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({active: !activation})
     }).then (res => {
         if(res.ok) {
             res.json().then(userUpdated => {
@@ -88,7 +88,7 @@ function onActivation(e) {
         <div>
             {!edit ? <div>
                 <h3 className='wayLessSpace'>{formData.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
-                <p className='wayLessSpace'>{formData.title}<button onClick={onActivation} className='userEdit'>{user.active ? "Deactivate" : "Activate"}</button></p>
+                <p className='wayLessSpace'>{formData.title}<button onClick={onActivation} className='userEdit'>{activation ? "Deactivate" : "Activate"}</button></p>
                 <p className='wayLessSpace'>{user.email}</p>
                 {formData.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
                 <br/>
