@@ -64,7 +64,7 @@ function updateUser(e) {
         <div>
             {!edit ? <div>
                 <h3 className='wayLessSpace'>{formData.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
-                <p className='wayLessSpace'>{formData.title}<button className='userEdit'></button></p>
+                <p className='wayLessSpace'>{formData.title}<button className='userEdit'>{user.active ? "Deactivate" : "Activate"}</button></p>
                 <p className='wayLessSpace'>{user.email}</p>
                 {formData.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
                 <br/>
