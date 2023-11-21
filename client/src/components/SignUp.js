@@ -31,7 +31,6 @@ function Signup({ users, setUsers, getCategories, getProducts, getUsers }) {
         .then(res => {
             if(res.ok){
                 res.json().then(user => {
-                    setCurrentUser(user)
                     setUsers([...users, user])
                     getCategories()
                     getProducts()
