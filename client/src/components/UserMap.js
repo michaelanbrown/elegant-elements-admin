@@ -69,7 +69,7 @@ function onActivation(e) {
             "Content-Type" : "application/json",
             "Accept" : "application/json"
         },
-        body: JSON.stringify({active: !user.active})
+        body: JSON.stringify(formData)
     }).then (res => {
         if(res.ok) {
             res.json().then(userUpdated => {
