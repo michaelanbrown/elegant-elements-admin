@@ -17,21 +17,21 @@ function Signup({ users, setUsers, getCategories, getProducts }) {
 
     function onSignUp(e){
         e.preventDefault()
-        const user = {
+        const newUser = {
             name,
             email,
             password,
             title
-        }   
+        }
         fetch(`/users`,{
           method:'POST',
           headers:{'Content-Type': 'application/json'},
-          body:JSON.stringify(user)
+          body:JSON.stringify(newUser)
         })
         .then(res => {
             if(res.ok){
-                res.json().then(user => {
-                    setUsers([...users, user])
+                res.json().then(newUser => {
+                    setUsers([...users, newUser])
                     getCategories()
                     getProducts()
                     navigate(`/users`)
