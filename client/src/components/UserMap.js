@@ -68,7 +68,13 @@ function onActivation(e) {
             "Content-Type" : "application/json",
             "Accept" : "application/json"
         },
-        body: JSON.stringify()
+        body: JSON.stringify({active: !user.active})
+    }).then (res => {
+        if(res.ok) {
+            res.json(updateUserInfo({active: !user.active}))
+        } else {
+            res.json().then(json => setErrors(json.errors))
+        }
     })
 }
 
