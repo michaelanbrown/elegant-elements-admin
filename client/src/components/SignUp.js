@@ -36,7 +36,7 @@ function Signup({ users, setUsers, getCategories, getProducts, getUsers }) {
                     getCategories()
                     getProducts()
                     getUsers()
-                    navigate(`/`)
+                    navigate(`/users`)
                 })
             } else {
                 res.json().then(json => setErrors(json.errors))
