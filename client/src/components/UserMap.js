@@ -9,9 +9,7 @@ const [formData, setFormData] = useState({
     title: user.title,
     admin: user.admin
 })
-const [activationStatus, setActivationStatus] = useState({
-    active: user.active
-})
+const [activationStatus, setActivationStatus] = useState(user.active)
 
 // allow admin to deactivate user - add front end and ability to update on backend
 
@@ -74,13 +72,15 @@ function onActivation(e) {
         body: JSON.stringify({active: !user.active})
     }).then (res => {
         if(res.ok) {
-            res.json(updateUserInfo({active: !user.active}))
+            res.json().then(userUpdated => {
+                updateUserInfo(userUpdated)
+            })
         } else {
             res.json().then(json => setErrors(json.errors))
         }
     })
 }
-console.log(user.active)
+
     return (
         <div>
             {!edit ? <div>
