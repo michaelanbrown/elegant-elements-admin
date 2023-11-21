@@ -15,6 +15,14 @@ function Signup({ users, setUsers, getCategories, getProducts }) {
     const {name, email, password, title} = formData
     const navigate = useNavigate();
 
+
+    function handleChange(e) {
+        setFormData({
+            ...formData,
+            [e.target.name] : e.target.value
+        });
+    }
+
     function onSignUp(e){
         e.preventDefault()
         const newUser = {
@@ -26,8 +34,9 @@ function Signup({ users, setUsers, getCategories, getProducts }) {
         fetch(`/users`,{
           method:'POST',
           headers:{"Content-Type": "application/json",
-                    "Accept" : "application/json"},
-          body:JSON.stringify(newUser)
+                    "Accept" : "application/json"
+                },
+          body: JSON.stringify(newUser)
         })
         .then(res => {
             if(res.ok){
@@ -41,13 +50,6 @@ function Signup({ users, setUsers, getCategories, getProducts }) {
                 res.json().then(json => setErrors(json.errors))
             }
         })  
-    }
-
-    function handleChange(e) {
-        setFormData({
-            ...formData,
-            [e.target.name] : e.target.value
-        });
     }
 
     return (
