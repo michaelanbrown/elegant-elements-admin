@@ -11,6 +11,8 @@ const [formData, setFormData] = useState({
     active: user.active
 })
 
+const [activation, setActivation] = useState(user.active)
+
 // allow admin to deactivate user - add front end and ability to update on backend
 
 function onEdit() {
@@ -73,6 +75,7 @@ function onActivation(e) {
     }).then (res => {
         if(res.ok) {
             res.json().then(userUpdated => {
+                console.log(userUpdated)
                 updateUserInfo(userUpdated)
             })
         } else {
