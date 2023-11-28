@@ -12,7 +12,7 @@ function Users ({ users, setUsers })  {
     return (
         <div>
             <br/>
-            <button>Active</button>{" "}<button>Inactive</button>
+            <button className='logout'>Active</button>{" "}<button className='logout'>Inactive</button>
             <br/>
             <br/>
             <NavLink className='navbarlink' to="/signup">Sign Up A New User</NavLink>
