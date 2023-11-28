@@ -13,6 +13,8 @@ function Users ({ users, setUsers })  {
         setActive(!active)
     }
 
+    // useEffect to get active/inactive users
+
     return (
         <div>
             {active ? <div>
