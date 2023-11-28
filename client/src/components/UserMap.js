@@ -86,28 +86,30 @@ function onActivation(e) {
 
     return (
         <div>
-            {!edit ? <div>
-                <h3 className='wayLessSpace'>{formData.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
-                <p className='wayLessSpace'>{formData.title}<button onClick={onActivation} className='userEdit'>{activation ? "Deactivate" : "Activate"}</button></p>
-                <p className='wayLessSpace'>{user.email}</p>
-                {formData.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
-                <br/>
-                <br/>
-            </div> : null }
-            {edit ? <form onSubmit={updateUser}>
-                            <h3>Name: <input className="nameFormField" type='text' name='name' value={formData.name} onChange={handleChange} /></h3>
-                            <p className='wayLessSpace'>Email: {user.email}</p>
-                            Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
-                            <br/>
-                            Admin Status: <input     style={{
-                                width: 20,
-                                height: 20
-                                }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChecked} />
-                            <br/>
-                            <button>Complete ✔️</button>
-                <br/>
-                <br/>
-            </form> : null }
+            <div>
+                {!edit ? <div>
+                    <h3 className='wayLessSpace'>{formData.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
+                    <p className='wayLessSpace'>{formData.title}<button onClick={onActivation} className='userEdit'>{activation ? "Deactivate" : "Activate"}</button></p>
+                    <p className='wayLessSpace'>{user.email}</p>
+                    {formData.admin ? <p className='wayLessSpace'>Admin Status: True</p> : <p className='wayLessSpace'>Admin Status: False</p> }
+                    <br/>
+                    <br/>
+                </div> : null }
+                {edit ? <form onSubmit={updateUser}>
+                                <h3>Name: <input className="nameFormField" type='text' name='name' value={formData.name} onChange={handleChange} /></h3>
+                                <p className='wayLessSpace'>Email: {user.email}</p>
+                                Title: <input className="formFields" type='text' name='title' value={formData.title} onChange={handleChange} />
+                                <br/>
+                                Admin Status: <input     style={{
+                                    width: 20,
+                                    height: 20
+                                    }}className="checkbox" type='checkbox' name='admin' checked={formData.admin} onChange={handleChecked} />
+                                <br/>
+                                <button>Complete ✔️</button>
+                    <br/>
+                    <br/>
+                </form> : null }
+            </div>
         </div>
     )
 }
