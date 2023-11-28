@@ -1,5 +1,5 @@
 import '../App.css'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import UserMap from './UserMap';
 
