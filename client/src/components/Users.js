@@ -15,7 +15,7 @@ function Users ({ users, setUsers })  {
 
     return (
         <div>
-            <div>
+            {active ? <div>
                 <br/>
                 <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
                 <br/>
@@ -25,7 +25,7 @@ function Users ({ users, setUsers })  {
                 <br/>
                 <br/>
                 {userMap}
-            </div>
+            </div> : null}
         </div>
     )
 }
