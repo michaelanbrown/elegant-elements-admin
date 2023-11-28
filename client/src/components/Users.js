@@ -12,6 +12,9 @@ function Users ({ users, setUsers })  {
     return (
         <div>
             <br/>
+            <button>Active</button>{" "}<button>Inactive</button>
+            <br/>
+            <br/>
             <NavLink className='navbarlink' to="/signup">Sign Up A New User</NavLink>
             <br/>
             <br/>
