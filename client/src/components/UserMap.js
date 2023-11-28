@@ -4,7 +4,6 @@ import React, { useState } from "react";
 function UserMap ({ user, users, setUsers })  {
 const [edit, setEdit] = useState(false)
 const [errors, setErrors] = useState([])
-const [active, setActive] = useState(true)
 const [formData, setFormData] = useState({
     name: user.name,
     title: user.title,

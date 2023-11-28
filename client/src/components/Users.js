@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import UserMap from './UserMap';
 
 function Users ({ users, setUsers })  {
-
+    const [active, setActive] = useState(true)
     const userMap = users.map(user => {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
