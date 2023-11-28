@@ -87,7 +87,7 @@ function onActivation(e) {
 
     return (
         <div>
-            <div>
+            {active ? <div>
                 {!edit ? <div>
                     <h3 className='wayLessSpace'>{formData.name}{" "}<button onClick={onEdit} className='userEdit'>Edit ✏️</button></h3>
                     <p className='wayLessSpace'>{formData.title}<button onClick={onActivation} className='userEdit'>{activation ? "Deactivate" : "Activate"}</button></p>
@@ -110,7 +110,7 @@ function onActivation(e) {
                     <br/>
                     <br/>
                 </form> : null }
-            </div>
+            </div> : null}
         </div>
     )
 }
