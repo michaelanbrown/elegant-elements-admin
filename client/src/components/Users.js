@@ -17,13 +17,16 @@ function Users ({ users, setUsers })  {
           if (res.ok) {
             res.json()
             .then(users => {
-              
+                setActiveUsers(users.filter(user => {
+                    user.active
+                }))
             })
           } else {
             res.json().then(json => setErrors([json.error]))
           }
         })
       }, [])
+
 
     function activeClick() {
         setActive(!active)
