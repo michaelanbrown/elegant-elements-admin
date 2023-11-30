@@ -9,6 +9,10 @@ function Users ({ users, setUsers })  {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
 
+    useEffect(() => {
+        
+      }, [])
+
     function activeClick() {
         setActive(!active)
     }
