@@ -27,16 +27,28 @@ function Users ({ users, setUsers })  {
     return (
         <div>
             {active ? <div>
-                <br/>
-                <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
-                <br/>
-                <br/>
-                <NavLink className='navbarlink' to="/signup">Sign Up A New User</NavLink>
-                <br/>
-                <br/>
-                <br/>
-                {activeUserMap}
-            </div> : null}
+                    <br/>
+                    <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
+                    <br/>
+                    <br/>
+                    <NavLink className='navbarlink' to="/signup">Sign Up A New User</NavLink>
+                    <br/>
+                    <br/>
+                    <br/>
+                    {activeUserMap}
+                    </div>
+                :
+                    <div>
+                    <br/>
+                    <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
+                    <br/>
+                    <br/>
+                    <NavLink className='navbarlink' to="/signup">Sign Up A New User</NavLink>
+                    <br/>
+                    <br/>
+                    <br/>
+                    {activeUserMap}
+            </div>}
         </div>
     )
 }
