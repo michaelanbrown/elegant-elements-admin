@@ -5,6 +5,7 @@ import UserMap from './UserMap';
 
 function Users ({ users, setUsers })  {
     const [active, setActive] = useState(true)
+    const [activeUsers, setActiveUsers] = useState([])
     const userMap = users.map(user => {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
@@ -14,7 +15,9 @@ function Users ({ users, setUsers })  {
         .then(res => {
           if (res.ok) {
             res.json()
-            
+            .then(users => {
+              
+            })
           } else {
             res.json().then(json => setErrors([json.error]))
           }
