@@ -10,6 +10,7 @@ function Users ({ users, setUsers })  {
     })
 
     useEffect(() => {
+        fetch("/users")
         
       }, [])
 
