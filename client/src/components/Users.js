@@ -13,19 +13,7 @@ function Users ({ users, setUsers })  {
     })
 
     useEffect(() => {
-        fetch("/users")
-        .then(res => {
-          if (res.ok) {
-            res.json()
-            .then(users => {
-                setActiveUsers(users.filter(user => {
-                    user.active
-                }))
-            })
-          } else {
-            res.json().then(json => setErrors([json.error]))
-          }
-        })
+        
       }, [])
 
 
