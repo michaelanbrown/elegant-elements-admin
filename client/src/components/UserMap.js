@@ -13,7 +13,7 @@ const [formData, setFormData] = useState({
 
 const [activation, setActivation] = useState(user.active)
 
-// filter for only active users and then push deactivated users to different section
+// auto change to inactive when deactivated
 
 function onEdit() {
     setEdit(!edit)
