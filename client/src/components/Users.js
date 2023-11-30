@@ -11,7 +11,14 @@ function Users ({ users, setUsers })  {
 
     useEffect(() => {
         fetch("/users")
-        
+        .then(res => {
+          if (res.ok) {
+            res.json()
+            
+          } else {
+            res.json().then(json => setErrors([json.error]))
+          }
+        })
       }, [])
 
     function activeClick() {
