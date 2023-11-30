@@ -51,7 +51,7 @@ function Users ({ users, setUsers })  {
                     <br/>
                     <br/>
                     <br/>
-                    {activeUserMap}
+                    {inactiveUserMap}
             </div>}
         </div>
     )
