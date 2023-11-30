@@ -22,6 +22,10 @@ function Users ({ users, setUsers })  {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
 
+    const inactiveUserMap = inactiveUsers.map(user => {
+        return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
+    })
+
     // useEffect to get active/inactive users
 
     return (
