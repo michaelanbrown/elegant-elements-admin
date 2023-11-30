@@ -8,9 +8,6 @@ function Users ({ users, setUsers })  {
     const [errors, setErrors] = useState([])
     const [activeUsers, setActiveUsers] = useState([])
     const [inactiveUsers, setInactiveUsers] = useState([])
-    const userMap = users.map(user => {
-        return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
-    })
 
     useEffect(() => {
         setActiveUsers(users.filter(user => user.active === true))
@@ -20,6 +17,10 @@ function Users ({ users, setUsers })  {
     function activeClick() {
         setActive(!active)
     }
+
+    const userMap = activeUsers.map(user => {
+        return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
+    })
 
     // useEffect to get active/inactive users
 
