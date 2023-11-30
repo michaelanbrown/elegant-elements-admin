@@ -18,7 +18,7 @@ function Users ({ users, setUsers })  {
         setActive(!active)
     }
 
-    const userMap = activeUsers.map(user => {
+    const activeUserMap = activeUsers.map(user => {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
 
@@ -35,7 +35,7 @@ function Users ({ users, setUsers })  {
                 <br/>
                 <br/>
                 <br/>
-                {userMap}
+                {activeUserMap}
             </div> : null}
         </div>
     )
