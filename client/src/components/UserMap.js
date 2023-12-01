@@ -13,8 +13,6 @@ const [formData, setFormData] = useState({
 
 const [activation, setActivation] = useState(user.active)
 
-// auto change to inactive when deactivated
-
 function onEdit() {
     setEdit(!edit)
 }
