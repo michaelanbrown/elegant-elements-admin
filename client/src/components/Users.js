@@ -5,7 +5,6 @@ import UserMap from './UserMap';
 
 function Users ({ users, setUsers })  {
     const [active, setActive] = useState(true)
-    const [errors, setErrors] = useState([])
     const [activeUsers, setActiveUsers] = useState([])
     const [inactiveUsers, setInactiveUsers] = useState([])
 
