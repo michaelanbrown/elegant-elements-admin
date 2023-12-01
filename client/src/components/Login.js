@@ -49,6 +49,7 @@ function Login({ getCategories, getProducts, getUsers }) {
 
     return (
         <div>
+        <br/>
             <form onSubmit={onLogin}>
                 Email: <input className="formFields" type="text" name="email" value={email} onChange={handleChange} />
                 <br/>
