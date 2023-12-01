@@ -8,6 +8,8 @@ function Users ({ users, setUsers })  {
     const [activeUsers, setActiveUsers] = useState([])
     const [inactiveUsers, setInactiveUsers] = useState([])
 
+    //add user filter
+
     useEffect(() => {
         setActiveUsers(users.filter(user => user.active === true))
         setInactiveUsers(users.filter(user => user.active === false))
