@@ -35,7 +35,7 @@ function handleChecked(e) {
 
 function updateUserInfo(updatedUser) {
     const updatingUser = users.map(currentUser => {
-        if(currentUser.if === user.id) {
+        if(currentUser.id === user.id) {
             return updatedUser
         } else {
             return currentUser
