@@ -29,7 +29,7 @@ function Users ({ users, setUsers })  {
     })
 
     function handleChange(e) {
-        
+        setFilter(e.target.value)
     }
 
     return (
