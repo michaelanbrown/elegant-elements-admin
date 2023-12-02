@@ -12,7 +12,7 @@ function Users ({ users, setUsers })  {
     //add user filter
 
     useEffect(() => {
-        setActiveUsers(users.filter(user => user.active === true))
+        filter ? setActiveUsers(users.filter(user => user.name.indexOf(filter) > -1).filter(user => user.active === true)) : setActiveUsers(users.filter(user => user.active === true))
         setInactiveUsers(users.filter(user => user.active === false))
       }, [users, filter])
 
