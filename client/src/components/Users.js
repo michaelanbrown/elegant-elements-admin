@@ -14,7 +14,7 @@ function Users ({ users, setUsers })  {
     useEffect(() => {
         setActiveUsers(users.filter(user => user.active === true))
         setInactiveUsers(users.filter(user => user.active === false))
-      }, [users])
+      }, [users, filter])
 
     function activeClick() {
         setActive(!active)
