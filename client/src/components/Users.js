@@ -32,7 +32,7 @@ function Users ({ users, setUsers })  {
         <div>
             {active ? <div>
                 <form>
-                    
+                    Name: <input className="formFields" type='text' name='filter' value={filter} />
                 </form>
                     <br/>
                     <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
