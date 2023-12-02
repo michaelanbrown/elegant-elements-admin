@@ -38,6 +38,7 @@ function Users ({ users, setUsers })  {
                     <br/>
                     <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
                     <br/>
+                    <br/>
                     <form>
                     Name: <input className="formFields" type='text' name='filter' value={filter} onChange={handleChange} />
                     </form>
