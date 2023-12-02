@@ -9,7 +9,7 @@ function Users ({ users, setUsers })  {
     const [inactiveUsers, setInactiveUsers] = useState([])
     const [filter, setFilter] = useState("")
 
-    //add user filter
+    //edit filter to not care about capitalization
 
     useEffect(() => {
         filter ? setActiveUsers(users.filter(user => user.name.indexOf(filter) > -1).filter(user => user.active === true)) : setActiveUsers(users.filter(user => user.active === true))
