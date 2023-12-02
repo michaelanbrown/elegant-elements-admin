@@ -7,6 +7,7 @@ function Users ({ users, setUsers })  {
     const [active, setActive] = useState(true)
     const [activeUsers, setActiveUsers] = useState([])
     const [inactiveUsers, setInactiveUsers] = useState([])
+    const [filter, setFilter] = useState("")
 
     //add user filter
 
