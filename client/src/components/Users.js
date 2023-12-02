@@ -28,6 +28,10 @@ function Users ({ users, setUsers })  {
         return <UserMap key={user.id} user={user} users={users} setUsers={setUsers}/>
     })
 
+    function handleChange(e) {
+        
+    }
+
     return (
         <div>
             {active ? <div>
