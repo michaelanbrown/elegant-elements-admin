@@ -31,6 +31,9 @@ function Users ({ users, setUsers })  {
     return (
         <div>
             {active ? <div>
+                <form>
+                    
+                </form>
                     <br/>
                     <button onClick={activeClick} className='logout'>Active</button>{" "}<button onClick={activeClick} className='logout'>Inactive</button>
                     <br/>
