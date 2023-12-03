@@ -7,6 +7,7 @@ const [errors, setErrors] = useState([])
 const [formData, setFormData] = useState({
     name: user.name,
     title: user.title,
+    email: user.email,
     admin: user.admin,
     active: user.active
 })
