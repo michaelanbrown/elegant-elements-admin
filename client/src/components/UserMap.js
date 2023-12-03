@@ -52,13 +52,14 @@ function updateUser(e) {
         },
         body: JSON.stringify(formData)
     }).then (res => {
+        console.log(res)
         if(res.ok) {
             res.json(updateUserInfo(formData))
+            setEdit(!edit)
         } else {
             res.json().then(json => setErrors(json.errors))
         }
     })
-    setEdit(!edit)
 }
 
 function onActivation(e) {
