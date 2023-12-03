@@ -54,7 +54,6 @@ function updateUser(e) {
         },
         body: JSON.stringify(formData)
     }).then (res => {
-        console.log(res)
         if(res.ok) {
             res.json(updateUserInfo(formData))
             setEdit(!edit)
