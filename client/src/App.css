@@ -132,5 +132,6 @@ padding: 0px; }
 }
 
 .error{
-  
+  color: rgb(156, 13, 13);
+  font-weight: bold;
 }
