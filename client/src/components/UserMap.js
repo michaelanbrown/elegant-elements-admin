@@ -108,6 +108,7 @@ function onActivation(e) {
                     <br/>
                     <br/>
                 </form> : null }
+                { errors ? :}
             </div>
         </div>
     )
