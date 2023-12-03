@@ -5,6 +5,7 @@ function UserMap ({ user, users, setUsers })  {
 const [edit, setEdit] = useState(false)
 const [errors, setErrors] = useState([])
 const [formData, setFormData] = useState({
+    id: user.id,
     name: user.name,
     title: user.title,
     email: user.email,
