@@ -13,7 +13,7 @@ function Users ({ users, setUsers })  {
 
     useEffect(() => {
         filter ? setActiveUsers(users.filter(user => user.name.toLowerCase().indexOf(filter.toLowerCase()) > -1).filter(user => user.active === true)) : setActiveUsers(users.filter(user => user.active === true))
-        filter ? setInactiveUsers(users.filter(user => user.name.indexOf(filter) > -1).filter(user => user.active === false)) : setInactiveUsers(users.filter(user => user.active === false))
+        filter ? setInactiveUsers(users.filter(user => user.name.toLowerCase().indexOf(filter.toLowerCase()) > -1).filter(user => user.active === false)) : setInactiveUsers(users.filter(user => user.active === false))
       }, [users, filter])
 
     function activeClick() {
